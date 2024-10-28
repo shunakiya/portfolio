@@ -22,7 +22,7 @@ export default function App() {
   return (
     <div className="flex flex-row gap-12 mx-auto min-h-screen max-w-screen-xl px-6 py-8 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
       {/* left side info */}
-      <div className="py-20 h-screen sticky flex flex-col w-1/2">
+      <div className="py-20 h-screen sticky flex flex-col w-[42%]">
         <div className="flex flex-col">
           <div>
             <img src={pfp} className="w-36 h-36 rounded-full mb-3" />
