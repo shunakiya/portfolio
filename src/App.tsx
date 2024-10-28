@@ -1,12 +1,18 @@
 // import { useState, useEffect } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
+import { IoDocumentText } from "react-icons/io5";
 import pfp from "./assets/pfp.png";
+import resume from "./assets/resume.pdf";
 
 export default function App() {
   const writeEmail = () => {
     const mailLink = "mailto:shunakiya@gmail.com";
     window.open(mailLink, "_blank");
+  };
+
+  const openResume = () => {
+    window.open(resume, "_blank");
   };
 
   return (
@@ -53,25 +59,62 @@ export default function App() {
 
         {/* socials */}
         <div className="flex items-center bottom-0">
+          {/* resume button */}
           <div className="flex space-x-8 items-center">
+            <button
+              onClick={openResume}
+              className="hover:transition hover:ease-in-out duration-100 hover:text-gray-400 hover:border-gray-500"
+            >
+              <div className="flex flex-row border-2 rounded-xl p-2 gap-2">
+                <p className="font-medium">Resume </p>
+                <IoDocumentText
+                  size={25}
+                  className="hover:transition hover:ease-in-out duration-75 hover:fill-gray-500"
+                />
+              </div>
+            </button>
+
             <a href="https://github.com/shunakiya" target="_blank">
-              <FaGithub size={25} />
+              <FaGithub
+                size={25}
+                className="hover:transition hover:ease-in-out duration-75 hover:fill-gray-500"
+              />
             </a>
 
             <a href="https://linkedin.com/in/shunsuke-akiya/" target="_blank">
-              <FaLinkedin size={25} />
+              <FaLinkedin
+                size={25}
+                className="hover:transition hover:ease-in-out duration-75
+              hover:fill-gray-500"
+              />
             </a>
             <button onClick={writeEmail}>
-              <IoIosMail size={33} />
+              <IoIosMail
+                size={33}
+                className="hover:transition hover:ease-in-out duration-75 hover:fill-gray-500"
+              />
             </button>
           </div>
         </div>
       </div>
 
       {/* right side info */}
-      <div className="py-20 h-screen flex flex-col">
-        <h1 className="text-2xl">About</h1>
-        <p>Work in progress</p>
+      <div className="py-20 h-screen flex flex-col w-max">
+        {/* About */}
+        <div className="mb-4">
+          <h1 className="text-2xl font-semibold mb-1">About</h1>
+          <p>Work in progress</p>
+        </div>
+
+        {/* Experience */}
+        <div className="mb-4">
+          <h1 className="text-2xl font-semibold mb-1">Experience</h1>
+        </div>
+
+        {/* Projects */}
+        <div>
+          <h1 className="text-2xl font-semibold mb-1">Projects</h1>
+        </div>
       </div>
     </div>
   );
