@@ -1,19 +1,9 @@
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 import pfp from "./assets/pfp.png";
 
 export default function App() {
-  const [show, setShow] = useState(false);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShow(true);
-    }, 100);
-
-    return () => clearTimeout(timer);
-  }, []);
-
   const writeEmail = () => {
     const mailLink = "mailto:shunakiya@gmail.com";
     window.open(mailLink, "_blank");
@@ -42,7 +32,7 @@ export default function App() {
               <p className="text-[17px] mb-3 -ml-[8.5px]">
                 📍La Quinta, California
               </p>
-              <p className="mt-[2px] ml-[6px]">🇺🇸</p>
+              <p className="mt-[1.5px] ml-[6px]">🇺🇸</p>
             </div>
 
             <p className="text-[16px] w-[335px] text-gray-400">
