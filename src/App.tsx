@@ -4,12 +4,14 @@ import { IoIosMail } from "react-icons/io";
 import { IoDocumentText } from "react-icons/io5";
 import pfp from "./assets/pfp.png";
 import resume from "./assets/resume.pdf";
+import lsa from "./assets/lsa.png";
 
 export default function App() {
   const writeEmail = () => {
     const mailLink = "mailto:shunakiya@gmail.com";
     window.open(mailLink, "_blank");
   };
+  4;
 
   const openResume = () => {
     window.open(resume, "_blank");
@@ -41,7 +43,7 @@ export default function App() {
               <p className="mt-[1.5px] ml-[6px]">🇺🇸</p>
             </div>
 
-            <p className="text-[16px] w-[335px] text-gray-400">
+            <p className="text-[16px] w-[335px] text-slate-400">
               I build scalable, user-friendly applications across front and back
               end.
             </p>
@@ -58,26 +60,23 @@ export default function App() {
         </div>
 
         {/* socials */}
-        <div className="flex items-center bottom-0">
+        <div className="flex items-center bottom-0 text-slate-400">
           {/* resume button */}
           <div className="flex space-x-8 items-center">
             <button
               onClick={openResume}
-              className="hover:transition hover:ease-in-out duration-100 hover:text-gray-400 hover:border-gray-500"
+              className=" hover:transition hover:ease-in-out duration-100 hover:text-[#e6f0ff]"
             >
-              <div className="flex flex-row border-2 rounded-xl p-2 gap-2">
+              <div className="flex flex-row border-2 duration-100 border-slate-400 hover:border-[#e6f0ff] rounded-xl p-2 gap-2">
                 <p className="font-medium">Resume </p>
-                <IoDocumentText
-                  size={25}
-                  className="hover:transition hover:ease-in-out duration-75 hover:fill-gray-500"
-                />
+                <IoDocumentText size={25} />
               </div>
             </button>
 
             <a href="https://github.com/shunakiya" target="_blank">
               <FaGithub
                 size={25}
-                className="hover:transition hover:ease-in-out duration-75 hover:fill-gray-500"
+                className="hover:transition hover:ease-in-out duration-75 hover:fill-[#e6f0ff]"
               />
             </a>
 
@@ -85,13 +84,13 @@ export default function App() {
               <FaLinkedin
                 size={25}
                 className="hover:transition hover:ease-in-out duration-75
-              hover:fill-gray-500"
+              hover:fill-[#e6f0ff]"
               />
             </a>
             <button onClick={writeEmail}>
               <IoIosMail
                 size={33}
-                className="hover:transition hover:ease-in-out duration-75 hover:fill-gray-500"
+                className="hover:transition hover:ease-in-out duration-75 hover:fill-[#e6f0ff]"
               />
             </button>
           </div>
@@ -109,11 +108,50 @@ export default function App() {
         {/* Experience */}
         <div className="mb-4">
           <h1 className="text-2xl font-semibold mb-1">Experience</h1>
+          <div>
+            <div className="flex flex-row items-center gap-2 mb-2">
+              <img
+                src={lsa}
+                className="w-16 h-16 p-2 border-2 rounded-full bg-white mr-1"
+              />
+              <div className="flex flex-col">
+                <h1 className="text-xl font-semibold">
+                  Software Developer Internship
+                </h1>
+                <p className="text-base font-medium">Torrance, California</p>
+                <p className="text-slate-400 text-sm">
+                  June 2024 - August 2024
+                </p>
+              </div>
+            </div>
+
+            <div className="list-inside space-y-1">
+              <li className="flex gap-2">
+                <p>•</p>
+                <p>Developed a worklog application for the company.</p>
+              </li>
+              <li className="flex gap-2">
+                <p>•</p>
+                <p>
+                  Implemented Login Authentication, CRUD functionality, and a
+                  user-friendly interface designed with Tailwind.
+                </p>
+              </li>
+              <li className="flex gap-2">
+                <p>•</p>
+                <p>
+                  Utilized Svelte as Frontend, Flask as Backend, and MySQL for
+                  database.
+                </p>
+              </li>
+            </div>
+          </div>
         </div>
 
         {/* Projects */}
         <div>
           <h1 className="text-2xl font-semibold mb-1">Projects</h1>
+          <p>Work in progress</p>
         </div>
       </div>
     </div>
