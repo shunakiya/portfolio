@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 import { IoDocumentText } from "react-icons/io5";
 import pfp from "./assets/pfp.png";
-import resume from "./assets/resume.pdf";
+import resume from "./resume.pdf";
 import lsa from "./assets/lsa.png";
 
 export default function App() {
@@ -11,147 +11,186 @@ export default function App() {
     const mailLink = "mailto:shunakiya@gmail.com";
     window.open(mailLink, "_blank");
   };
-  4;
 
   const openResume = () => {
     window.open(resume, "_blank");
   };
 
   return (
-    <div className="flex flex-row gap-12 mx-auto min-h-screen max-w-screen-xl px-6 py-8 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
-      {/* left side info */}
-      <div className="py-20 h-screen sticky flex flex-col w-[42%]">
-        <div className="flex flex-col">
-          <div>
-            <img src={pfp} className="w-36 h-36 rounded-full mb-3" />
-            <h1 className="text-4xl font-bold">Shunsuke Akiya</h1>
-          </div>
+    <div className="bg-gradient-to-r from-[#1c2942] via-[#162033] to-[#111927] min-h-screen">
+      <div className="flex flex-row gap-40 mx-auto min-h-screen max-w-screen-xl px-6 py-8 md:px-12 md:py-20 lg:px-24 lg:py-0 overflow-x-hidden">
+        {/* left side info */}
+        <div className="py-20 h-screen flex flex-col w-[42%] sticky top-0">
+          <div className="flex flex-col">
+            <div>
+              <img src={pfp} className="w-36 h-36 rounded-full mb-2" />
+              <h1 className="text-4xl font-bold">Shunsuke Akiya</h1>
+            </div>
 
-          <div className="mt-3">
-            <p className="text-xl font-medium mb-3">
-              <span className="animate-text-gradient bg-gradient-to-r from-purple-400 via-pink-500 to-blue-400 bg-[200%_auto] bg-clip-text text-transparent mr-1">
-                Full-Stack
-              </span>
-              {""}
-              Developer
-            </p>
-
-            <div className="flex flex-row">
-              <p className="text-[17px] mb-3 -ml-[8.5px]">
-                📍La Quinta, California
+            <div className="mt-2">
+              <p className="text-xl font-medium mb-2">
+                <span className="animate-text-gradient bg-gradient-to-r from-purple-400 via-pink-500 to-blue-400 bg-[200%_auto] bg-clip-text text-transparent mr-1">
+                  Full-Stack
+                </span>
+                {""}
+                Developer
               </p>
-              <p className="mt-[1.5px] ml-[6px]">🇺🇸</p>
-            </div>
 
-            <p className="text-[16px] w-[335px] text-slate-400">
-              I build scalable, user-friendly applications across front and back
-              end.
-            </p>
-          </div>
-        </div>
-
-        {/* nav buttons */}
-        <div className="flex flex-col items-start tracking-widest my-auto gap-2">
-          <button>About</button>
-
-          <button>Experience</button>
-
-          <button>Projects</button>
-        </div>
-
-        {/* socials */}
-        <div className="flex items-center bottom-0 text-slate-400">
-          {/* resume button */}
-          <div className="flex space-x-8 items-center">
-            <button
-              onClick={openResume}
-              className=" hover:transition hover:ease-in-out duration-100 hover:text-[#e6f0ff]"
-            >
-              <div className="flex flex-row border-2 duration-100 border-slate-400 hover:border-[#e6f0ff] rounded-xl p-2 gap-2">
-                <p className="font-medium">Resume </p>
-                <IoDocumentText size={25} />
+              <div className="flex flex-row">
+                <p className="text-[16px] mb-3 -ml-[8.5px]">
+                  📍La Quinta, California
+                </p>
+                <p className="mt-[1.5px] ml-[6px]">🇺🇸</p>
               </div>
-            </button>
 
-            <a href="https://github.com/shunakiya" target="_blank">
-              <FaGithub
-                size={25}
-                className="hover:transition hover:ease-in-out duration-75 hover:fill-[#e6f0ff]"
-              />
-            </a>
+              <p className="text-[15px] w-[335px] text-slate-400">
+                I build scalable, user-friendly applications across front and
+                back end.
+              </p>
+            </div>
+          </div>
 
-            <a href="https://linkedin.com/in/shunsuke-akiya/" target="_blank">
-              <FaLinkedin
-                size={25}
-                className="hover:transition hover:ease-in-out duration-75
+          {/* nav buttons */}
+          <div className="flex flex-col items-start tracking-widest my-auto gap-2">
+            <button>About</button>
+
+            <button>Experience</button>
+
+            <button>Projects</button>
+          </div>
+
+          {/* socials */}
+          <div className="flex items-center bottom-0 text-slate-400">
+            {/* resume button */}
+            <div className="flex space-x-8 items-center">
+              <button
+                onClick={openResume}
+                className=" hover:transition hover:ease-in-out duration-100 hover:text-[#e6f0ff]"
+              >
+                <div className="flex flex-row border-2 duration-100 border-slate-400 hover:border-[#e6f0ff] rounded-xl p-2 gap-2">
+                  <p className="font-medium">Resume </p>
+                  <IoDocumentText size={25} />
+                </div>
+              </button>
+
+              <a href="https://github.com/shunakiya" target="_blank">
+                <FaGithub
+                  size={25}
+                  className="hover:transition hover:ease-in-out duration-75 hover:fill-[#e6f0ff]"
+                />
+              </a>
+
+              <a href="https://linkedin.com/in/shunsuke-akiya/" target="_blank">
+                <FaLinkedin
+                  size={25}
+                  className="hover:transition hover:ease-in-out duration-75
               hover:fill-[#e6f0ff]"
-              />
-            </a>
-            <button onClick={writeEmail}>
-              <IoIosMail
-                size={33}
-                className="hover:transition hover:ease-in-out duration-75 hover:fill-[#e6f0ff]"
-              />
-            </button>
+                />
+              </a>
+              <button onClick={writeEmail}>
+                <IoIosMail
+                  size={33}
+                  className="hover:transition hover:ease-in-out duration-75 hover:fill-[#e6f0ff]"
+                />
+              </button>
+            </div>
           </div>
         </div>
-      </div>
 
-      {/* right side info */}
-      <div className="py-20 h-screen flex flex-col w-max">
-        {/* About */}
-        <div className="mb-4">
-          <h1 className="text-2xl font-semibold mb-1">About</h1>
-          <p>Work in progress</p>
-        </div>
+        {/* right side info */}
+        <div className="py-20 flex flex-col w-[70%] ml-auto space-y-7">
+          {/* about */}
+          <div className="mb-1">
+            <h1 className="text-2xl font-semibold mb-1.5">About</h1>
+            <div className="space-y-4 text-[#a4b4cb]">
+              <p>
+                I’m a 21-year-old Full-Stack Developer who enjoys learning and
+                building high-quality applications. I started programming young
+                in{" "}
+                <a
+                  href="https://www.kipr.org/"
+                  target="blank"
+                  className="font-semibold text-blue-400 transition ease-in-out duration-100 hover:text-blue-500"
+                >
+                  robotics
+                </a>
+                , but my Software Developer internship sparked my path into
+                Full-Stack Development. Since then, I’ve committed to expanding
+                my skills, from TypeScript and full-stack knowledge to
+                algorithms and data structures.
+              </p>
+              <p>
+                I enjoy working in both design and engineering, aiming for a
+                balance between performance and functionality. Whether building
+                a dynamic frontend interface or coding efficient backend logic,
+                I continue to grow my toolkit and am ready to face new
+                challenges.
+              </p>
+              <p>
+                Outside of coding, I enjoy playing Overwatch with{" "}
+                <span className="font-semibold text-blue-400">
+                  my girlfriend
+                </span>
+                , building and modding custom mechanical keyboards, or liking{" "}
+                <span className="font-semibold text-blue-400">
+                  cat pictures.
+                </span>
+              </p>
+            </div>
+          </div>
 
-        {/* Experience */}
-        <div className="mb-4">
-          <h1 className="text-2xl font-semibold mb-1">Experience</h1>
-          <div>
-            <div className="flex flex-row items-center gap-2 mb-2">
-              <img
-                src={lsa}
-                className="w-16 h-16 p-2 border-2 rounded-full bg-white mr-1"
-              />
-              <div className="flex flex-col">
-                <h1 className="text-xl font-semibold">
-                  Software Developer Internship
-                </h1>
-                <p className="text-base font-medium">Torrance, California</p>
-                <p className="text-slate-400 text-sm">
-                  June 2024 - August 2024
-                </p>
+          {/* experience */}
+          <div className="mb-4 ">
+            <h1 className="text-2xl font-semibold mb-1.5">Experience</h1>
+            <div className="border-l-2 border-slate-400 pb-1">
+              <div className="ml-4">
+                <div className="flex flex-row items-center gap-2 mb-2">
+                  <img
+                    src={lsa}
+                    className="w-16 h-16 p-2 border-2 rounded-full bg-white mr-1"
+                  />
+                  <div className="flex flex-col">
+                    <h1 className="text-xl font-semibold">
+                      Software Developer Internship
+                    </h1>
+                    <p className="text-base font-medium">
+                      Torrance, California
+                    </p>
+                    <p className="text-slate-500 text-sm">
+                      June 2024 - August 2024
+                    </p>
+                  </div>
+                </div>
+
+                <div className="list-inside space-y-1 text-[#a4b4cb]">
+                  <li className="flex gap-2">
+                    <p>•</p>
+                    <p>Developed a worklog application for the company.</p>
+                  </li>
+                  <li className="flex gap-2">
+                    <p>•</p>
+                    <p>
+                      Implemented Login Authentication, CRUD functionality, and
+                      a user-friendly interface designed with Tailwind.
+                    </p>
+                  </li>
+                  <li className="flex gap-2">
+                    <p>•</p>
+                    <p>
+                      Utilized Svelte as Frontend, Flask as Backend, and MySQL
+                      for database.
+                    </p>
+                  </li>
+                </div>
               </div>
             </div>
-
-            <div className="list-inside space-y-1">
-              <li className="flex gap-2">
-                <p>•</p>
-                <p>Developed a worklog application for the company.</p>
-              </li>
-              <li className="flex gap-2">
-                <p>•</p>
-                <p>
-                  Implemented Login Authentication, CRUD functionality, and a
-                  user-friendly interface designed with Tailwind.
-                </p>
-              </li>
-              <li className="flex gap-2">
-                <p>•</p>
-                <p>
-                  Utilized Svelte as Frontend, Flask as Backend, and MySQL for
-                  database.
-                </p>
-              </li>
-            </div>
           </div>
-        </div>
 
-        {/* Projects */}
-        <div>
-          <h1 className="text-2xl font-semibold mb-1">Projects</h1>
-          <p>Work in progress</p>
+          {/* projects */}
+          <div className="">
+            <h1 className="text-2xl font-semibold mb-1">Projects</h1>
+            <p>(Work in progress)</p>
+          </div>
         </div>
       </div>
     </div>
