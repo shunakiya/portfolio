@@ -8,10 +8,15 @@
   font-weight: 400;
 
   color: #e6f0ff;
-  background-color: #111927;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  @apply bg-gradient-to-r from-[#1c2942] via-[#162033] to-[#111927];
+  min-height: 100vh;
+  background-attachment: fixed;
 }

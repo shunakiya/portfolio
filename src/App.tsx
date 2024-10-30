@@ -1,9 +1,11 @@
 // import { useState, useEffect } from "react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { IoIosMail } from "react-icons/io";
+import { FaGithub, FaLinkedin, FaReact } from "react-icons/fa";
+import { IoIosMail, IoIosArrowUp } from "react-icons/io";
 import { IoDocumentText } from "react-icons/io5";
+import { SiTypescript } from "react-icons/si";
+import { RiTailwindCssFill } from "react-icons/ri";
 import pfp from "./assets/pfp.png";
-import resume from "./resume.pdf";
+import resume from "./assets/resume.pdf";
 import lsa from "./assets/lsa.png";
 
 export default function App() {
@@ -17,7 +19,7 @@ export default function App() {
   };
 
   return (
-    <div className="bg-gradient-to-r from-[#1c2942] via-[#162033] to-[#111927] min-h-screen">
+    <body className="bg-gradient-to-r from-[#1c2942] via-[#162033] to-[#111927] min-h-screen">
       <div className="flex flex-row gap-40 mx-auto min-h-screen max-w-screen-xl px-6 py-8 md:px-12 md:py-20 lg:px-24 lg:py-0 overflow-x-hidden">
         {/* left side info */}
         <div className="py-20 h-screen flex flex-col w-[42%] sticky top-0">
@@ -51,12 +53,38 @@ export default function App() {
           </div>
 
           {/* nav buttons */}
-          <div className="flex flex-col items-start tracking-widest my-auto gap-2">
-            <button>About</button>
+          <div className="flex flex-col items-start tracking-widest my-auto gap-1">
+            <p className="text-sm text-slate-500 tracking-normal">
+              Buttons are work in progress
+            </p>
+            <div className="flex flex-row gap-1.5 items-center">
+              <IoIosArrowUp className="" />
 
-            <button>Experience</button>
+              <button
+                className="hover:transition ease-in-out duration-100
+              hover:text-[#ffffff] hover:font-medium"
+              >
+                About
+              </button>
+            </div>
 
-            <button>Projects</button>
+            <div className="flex flex-row gap-1.5 items-center">
+              <IoIosArrowUp className="" />
+
+              <button>Skills</button>
+            </div>
+
+            <div className="flex flex-row gap-1.5 items-center">
+              <IoIosArrowUp className="" />
+
+              <button>Expereince</button>
+            </div>
+
+            <div className="flex flex-row gap-1.5 items-center">
+              <IoIosArrowUp className="" />
+
+              <button>Projects</button>
+            </div>
           </div>
 
           {/* socials */}
@@ -76,21 +104,21 @@ export default function App() {
               <a href="https://github.com/shunakiya" target="_blank">
                 <FaGithub
                   size={25}
-                  className="hover:transition hover:ease-in-out duration-75 hover:fill-[#e6f0ff]"
+                  className="hover:transition hover:ease-in-out duration-100 hover:fill-[#e6f0ff]"
                 />
               </a>
 
               <a href="https://linkedin.com/in/shunsuke-akiya/" target="_blank">
                 <FaLinkedin
                   size={25}
-                  className="hover:transition hover:ease-in-out duration-75
+                  className="hover:transition hover:ease-in-out duration-100
               hover:fill-[#e6f0ff]"
                 />
               </a>
               <button onClick={writeEmail}>
                 <IoIosMail
                   size={33}
-                  className="hover:transition hover:ease-in-out duration-75 hover:fill-[#e6f0ff]"
+                  className="hover:transition hover:ease-in-out duration-100 hover:fill-[#e6f0ff]"
                 />
               </button>
             </div>
@@ -110,7 +138,7 @@ export default function App() {
                 <a
                   href="https://www.kipr.org/"
                   target="blank"
-                  className="font-semibold text-blue-400 transition ease-in-out duration-100 hover:text-blue-500"
+                  className="font-semibold text-blue-400 hover:text-blue-500"
                 >
                   robotics
                 </a>
@@ -128,14 +156,28 @@ export default function App() {
               </p>
               <p>
                 Outside of coding, I enjoy playing Overwatch with{" "}
-                <span className="font-semibold text-blue-400">
-                  my girlfriend
-                </span>
-                , building and modding custom mechanical keyboards, or liking{" "}
-                <span className="font-semibold text-blue-400">
-                  cat pictures.
-                </span>
+                <span>my girlfriend</span>, building and modding custom
+                mechanical keyboards, or liking <span>cat pictures.</span>
               </p>
+            </div>
+          </div>
+
+          {/* skills */}
+          <div className="mb-4">
+            <h1 className="text-2xl font-semibold mb-1.5">Skills</h1>
+            <p className="text-sm text-slate-500 tracking-normal">
+              Work in progress
+            </p>
+            <div>
+              <SiTypescript className="fill-[#3178C6]" />
+            </div>
+
+            <div>
+              <RiTailwindCssFill />
+            </div>
+
+            <div>
+              <FaReact />
             </div>
           </div>
 
@@ -189,10 +231,12 @@ export default function App() {
           {/* projects */}
           <div className="">
             <h1 className="text-2xl font-semibold mb-1">Projects</h1>
-            <p>(Work in progress)</p>
+            <p className="text-sm text-slate-500 tracking-normal">
+              Work in progress
+            </p>
           </div>
         </div>
       </div>
-    </div>
+    </body>
   );
 }
