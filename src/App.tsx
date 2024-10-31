@@ -5,7 +5,6 @@ import { IoDocumentText } from "react-icons/io5";
 import { SiTypescript, SiMysql, SiFlask } from "react-icons/si";
 import { RiTailwindCssFill, RiNextjsFill } from "react-icons/ri";
 import pfp from "./assets/pfp.png";
-import resume from "./assets/resume.pdf";
 import lsa from "./assets/lsa.png";
 
 export default function App() {
@@ -15,7 +14,7 @@ export default function App() {
   };
 
   const openResume = () => {
-    window.open(resume, "_blank");
+    window.open("/resume.pdf", "_blank");
   };
 
   return (
