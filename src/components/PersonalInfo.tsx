@@ -33,7 +33,7 @@ export default function PersonalInfo() {
         </div>
 
         <div className="mt-2">
-          <p className="text-xl font-medium mb-2">
+          <p className="text-xl  mb-2">
             <span className="animate-text-gradient bg-gradient-to-r from-purple-400 via-pink-500 to-blue-400 bg-[200%_auto] bg-clip-text text-transparent mr-1">
               Full-Stack
             </span>
@@ -56,71 +56,71 @@ export default function PersonalInfo() {
       </div>
 
       {/* nav buttons */}
-      <div className="flex flex-col items-start tracking-widest my-auto gap-1">
-        <p className="text-sm text-slate-500 tracking-normal">
-          Buttons are work in progress
-        </p>
-
+      <div className="flex flex-col items-start tracking-widest my-auto gap-0.5">
+        {/* about */}
         <button
           onClick={() => toggleActive("about")}
           className={`flex flex-row gap-1.5 items-center group ${
-            activeButton === "about" ? "text-white font-medium" : ""
+            activeButton === "about" ? "text-white" : ""
           }`}
         >
           <IoIosArrowUp
-            className={`transition-transform duration-300 ease-in-out transform
+            className={`transition-transform duration-300 ease-in-out mt-0.5 transform
             ${activeButton === "about" ? "rotate-90" : ""}
-            group-hover:rotate-90`}
+            group-hover:rotate-90 group-hover:fill-white`}
           />
-          <p className="transition -100 ease-in-out group-hover:text-white group-hover:font-medium">
+          <p className="transition -100 ease-in-out group-hover:text-white">
             About
           </p>
         </button>
 
+        {/* skills */}
         <button
           onClick={() => toggleActive("skills")}
           className={`flex flex-row gap-1.5 items-center group ${
-            activeButton === "skills" ? "text-white font-medium" : ""
+            activeButton === "skills" ? "text-white" : ""
           }`}
         >
           <IoIosArrowUp
-            className={`transition-transform duration-300 ease-in-out transform
+            className={`transition-transform duration-300 ease-in-out mt-0.5 transform
             ${activeButton === "skills" ? "rotate-90" : ""}
-            group-hover:rotate-90`}
+            group-hover:rotate-90 group-hover:fill-white`}
           />
-          <p className="transition -100 ease-in-out group-hover:text-white group-hover:font-medium">
+          <p className="transition -100 ease-in-out group-hover:text-white">
             Skills
           </p>
         </button>
 
+        {/* experience */}
         <button
           onClick={() => toggleActive("experience")}
           className={`flex flex-row gap-1.5 items-center group ${
-            activeButton === "experience" ? "text-white font-medium" : ""
+            activeButton === "experience" ? "text-white" : ""
           }`}
         >
           <IoIosArrowUp
-            className={`transition-transform duration-300 ease-in-out transform
+            className={`transition-transform duration-300 ease-in-out mt-0.5 transform
             ${activeButton === "experience" ? "rotate-90" : ""}
-            group-hover:rotate-90`}
+            group-hover:rotate-90 group-hover:fill-white`}
           />
-          <p className="transition -100 ease-in-out group-hover:text-white group-hover:font-medium">
+          <p className="transition -100 ease-in-out group-hover:text-white">
             Experience
           </p>
         </button>
 
+        {/* projects */}
         <button
           onClick={() => toggleActive("projects")}
           className={`flex flex-row gap-1.5 items-center group ${
-            activeButton === "projects" ? "text-white font-medium" : ""
+            activeButton === "projects" ? "text-white " : ""
           }`}
         >
           <IoIosArrowUp
-            className={`transition-transform duration-300 ease-in-out transform
+            className={`transition-transform duration-300 ease-in-out mt-0.5 transform
             ${activeButton === "projects" ? "rotate-90" : ""}
-            group-hover:rotate-90`}
+            group-hover:rotate-90 group-hover:fill-white`}
           />
-          <p className="transition -100 ease-in-out group-hover:text-white group-hover:font-medium">
+          <p className="transition -100 ease-in-out group-hover:text-white">
             Projects
           </p>
         </button>
@@ -128,19 +128,20 @@ export default function PersonalInfo() {
 
       {/* socials */}
       <div className="flex items-center bottom-0 text-slate-400">
-        {/* resume button */}
         <div className="flex space-x-8 items-center">
+          {/* resume */}
           <button
             onClick={openResume}
             className=" hover:transition hover:ease-in-out duration-100 hover:text-[#e6f0ff]"
             title="Resume"
           >
             <div className="flex flex-row border-2 duration-100 border-slate-400 hover:border-[#e6f0ff] rounded-xl p-2 gap-2">
-              <p className="font-medium">Resume </p>
+              <p className="">Resume </p>
               <IoDocumentText size={25} />
             </div>
           </button>
 
+          {/* github */}
           <a href="https://github.com/shunakiya" target="_blank" title="GitHub">
             <FaGithub
               size={25}
@@ -148,6 +149,7 @@ export default function PersonalInfo() {
             />
           </a>
 
+          {/* linkedin */}
           <a
             href="https://linkedin.com/in/shunsuke-akiya/"
             target="_blank"
@@ -159,6 +161,8 @@ export default function PersonalInfo() {
               hover:fill-[#e6f0ff]"
             />
           </a>
+
+          {/* email */}
           <button onClick={writeEmail} title="Send Email">
             <IoIosMail
               size={33}
