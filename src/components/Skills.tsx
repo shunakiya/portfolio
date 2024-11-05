@@ -4,7 +4,7 @@ import { RiTailwindCssFill, RiNextjsFill } from "react-icons/ri";
 
 export default function Skills() {
   return (
-    <>
+    <div className="flex flex-col mb-1">
       <h1 className="text-2xl font-semibold mb-1.5">Skills</h1>
 
       <div className="flex flex-row mb-3 gap-x-4">
@@ -42,7 +42,7 @@ export default function Skills() {
           </div>
           <div className="flex flex-col mx-2 ml-2.5">
             <p className="text-base mb-0.5 text-[#a4b4cb] transition-colors duration-150 ease-in-out group-hover:text-[#e6f0ff]">
-              TailwindCSS
+              Tailwind CSS
             </p>
             <p className="text-xs text-slate-500 transition-colors duration-150 ease-in-out group-hover:text-[#a4b4cb]">
               CSS Framework
@@ -98,6 +98,6 @@ export default function Skills() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

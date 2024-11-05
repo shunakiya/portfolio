@@ -2,7 +2,7 @@ import lsa from "../assets/lsa.png";
 
 export default function Experience() {
   return (
-    <>
+    <div className="mb-4">
       <h1 className="text-2xl font-semibold mb-1.5">Experience</h1>
 
       <div className="border-l-2 border-slate-400 pb-1">
@@ -43,6 +43,6 @@ export default function Experience() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

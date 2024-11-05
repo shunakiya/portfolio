@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <>
+    <div className="mb-1">
       <h1 className="text-2xl font-semibold mb-1.5">About</h1>
       <div className="space-y-4 text-[#a4b4cb]">
         <p>
@@ -29,6 +29,6 @@ export default function About() {
           keyboards, or liking <span>cat pictures.</span>
         </p>
       </div>
-    </>
+    </div>
   );
 }

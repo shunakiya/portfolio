@@ -3,6 +3,7 @@
 Welcome to my portfolio page! It's built using:
 
 - React
+- TypeScript
 - Tailwind
 - React-icons
 
