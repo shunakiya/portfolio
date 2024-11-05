@@ -3,6 +3,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { IoIosMail, IoIosArrowUp } from "react-icons/io";
 import { IoDocumentText } from "react-icons/io5";
 import pfp from "../assets/pfp.png";
+import usa from "../assets/usa.svg";
 
 export default function PersonalInfo() {
   const [activeButton, setActive] = useState<string | null>(null);
@@ -41,11 +42,11 @@ export default function PersonalInfo() {
             Developer
           </p>
 
-          <div className="flex flex-row">
+          <div className="flex flex-row items-center">
             <p className="text-[16px] mb-3 -ml-[8.5px]">
               📍La Quinta, California
             </p>
-            <p className="mt-[1.5px] ml-[6px]">🇺🇸</p>
+            <img src={usa} className="w-5 h-3 ml-[7px] mb-2" />
           </div>
 
           <p className="text-[15px] w-[335px] text-slate-400">
