@@ -8,25 +8,30 @@ export default function Projects() {
 
       <div className="">
         {/* project 1 */}
-        <div className="border-l-2  border-slate-400 pb-1 mb-8">
-          <div className=" ml-4 flex flex-row">
+        <div className="border-l-2 border-slate-400 pb-1 mb-8">
+          <div className="ml-4">
             <div className="flex flex-row items-center gap-2 mb-2">
-              <img src={csusb} className="w-[68px] h-[68px] mr-1" />
-            </div>
-
-            <div className="list-inside space-y-1 text-[#a4b4cb] ml-5">
-              <div className="flex flex-flex items-center">
+              <img
+                src={csusb}
+                className="w-[68px] h-[68px] rounded-full  mr-1"
+              />
+              <div className="flex flex-col gap-2">
                 <a
                   className="flex flex-row items-center"
                   href="https://github.com/shunakiya/tail-recursion-project"
                   target="_blank"
                 >
                   <h1 className="text-xl font-semibold underline text-[#e6f0ff] -mb-0.5">
-                    Tail Recursion Project
+                    Tail Recursion
                   </h1>
                   <MdOpenInNew className="mt-1.5 ml-2" size={19} />
                 </a>
+
+                <p className="text-slate-500 text-sm">Fall 2023</p>
               </div>
+            </div>
+
+            <div className="list-inside space-y-1 text-[#a4b4cb]">
               <li className="flex gap-2">
                 <p>•</p>
                 <p>
@@ -50,14 +55,14 @@ export default function Projects() {
         </div>
 
         {/* project 2 */}
-        <div className="border-l-2 pb-1 border-slate-400">
-          <div className=" ml-4 flex flex-row">
+        <div className="border-l-2 border-slate-400 pb-1 mb-8">
+          <div className="ml-4">
             <div className="flex flex-row items-center gap-2 mb-2">
-              <img src={csusb} className="w-20 h-[68px] mr-1" />
-            </div>
-
-            <div className="list-inside space-y-1 text-[#a4b4cb] ml-5">
-              <div className="flex flex-flex items-center">
+              <img
+                src={csusb}
+                className="w-[68px] h-[68px] rounded-full  mr-1"
+              />
+              <div className="flex flex-col gap-2">
                 <a
                   className="flex flex-row items-center"
                   href="https://github.com/shunakiya/three-algorithms"
@@ -68,7 +73,12 @@ export default function Projects() {
                   </h1>
                   <MdOpenInNew className="mt-1.5 ml-2" size={19} />
                 </a>
+
+                <p className="text-slate-500 text-sm">Fall 2023</p>
               </div>
+            </div>
+
+            <div className="list-inside space-y-1 text-[#a4b4cb]">
               <li className="flex gap-2">
                 <p>•</p>
                 <p>
