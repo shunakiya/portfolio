@@ -65,7 +65,7 @@ export default function Skills() {
             </p>
           </div>
 
-          <div className="absolute top-1 right-1 bg-yellow-500 text-xs text-slate-900 px-1.5 py-0.5 rounded-lg">
+          <div className="absolute top-1 right-1 bg-yellow-500 text-xs text-slate-700 px-1.5 py-0.5 rounded-lg">
             In Progress
           </div>
         </div>

@@ -16,6 +16,57 @@ export default function Projects() {
                 className="w-[68px] h-[68px] rounded-full  mr-1"
               />
               <div className="flex flex-col gap-2">
+                <div className="flex flex-row items-center gap-3">
+                  <h1 className="text-xl font-semibold  text-[#e6f0ff] -mb-0.5">
+                    Solenoid Control Using Fingerprint and NFC Sensor
+                  </h1>
+
+                  <p className="bg-yellow-500 text-xs text-slate-700 px-2 py-1 rounded-lg items-center w-max">
+                    In Progress
+                  </p>
+                </div>
+
+                <p className="text-slate-500 text-sm">
+                  Fall 2024 - Spring 2025
+                </p>
+              </div>
+            </div>
+
+            <div className="list-inside space-y-1 text-[#a4b4cb]">
+              <li className="flex gap-2">
+                <p>•</p>
+                <p>
+                  Developed a smart-lock with fingerprint sensor, NFC, and key
+                  access.
+                </p>
+              </li>
+              <li className="flex gap-2">
+                <p>•</p>
+                <p>
+                  Integrated remote control, solenoid-powered lock, fingerprint
+                  reader, and smartphone NFC system.
+                </p>
+              </li>
+              <li className="flex gap-2">
+                <p>•</p>
+                <p>
+                  Used a Raspberry Pi to host a Flask backend server, with data
+                  fetched by a React frontend designed with Tailwind.
+                </p>
+              </li>
+            </div>
+          </div>
+        </div>
+
+        {/* project 2 */}
+        <div className="border-l-2 border-slate-400 pb-1 mb-8">
+          <div className="ml-4">
+            <div className="flex flex-row items-center gap-2 mb-2">
+              <img
+                src={csusb}
+                className="w-[68px] h-[68px] rounded-full  mr-1"
+              />
+              <div className="flex flex-col gap-2">
                 <a
                   className="flex flex-row items-center"
                   href="https://github.com/shunakiya/tail-recursion-project"
@@ -54,7 +105,7 @@ export default function Projects() {
           </div>
         </div>
 
-        {/* project 2 */}
+        {/* project 3 */}
         <div className="border-l-2 border-slate-400 pb-1 mb-8">
           <div className="ml-4">
             <div className="flex flex-row items-center gap-2 mb-2">

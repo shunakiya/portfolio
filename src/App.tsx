@@ -12,11 +12,11 @@ export default function App() {
   useEffect(() => {
     const firstTimer = setTimeout(() => {
       setShowLeft(true);
-    }, 100);
+    }, 150);
 
     const secondTimer = setTimeout(() => {
       setShowRight(true);
-    }, 205);
+    }, 255);
 
     return () => {
       clearTimeout(firstTimer);

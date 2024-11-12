@@ -58,6 +58,7 @@ export default function PersonalInfo() {
 
       {/* nav buttons */}
       <div className="flex flex-col items-start tracking-widest my-auto gap-0.5">
+        <p className="text-xs text-slate-500 tracking-normal">Coming soon</p>
         {/* about */}
         <div className="text-slate-400">
           <button
