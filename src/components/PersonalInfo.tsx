@@ -26,7 +26,7 @@ export default function PersonalInfo() {
   };
 
   return (
-    <div className="py-20 h-screen flex flex-col sticky top-0">
+    <div className="py-4 sm:py-6 md:py-8 lg:py-20 flex flex-col sticky gap-6 top-0">
       <div className="flex flex-col">
         <div>
           <img src={pfp} className="w-36 h-36 rounded-full mb-2" />
@@ -57,7 +57,7 @@ export default function PersonalInfo() {
       </div>
 
       {/* nav buttons */}
-      <div className="flex flex-col items-start tracking-widest my-auto gap-0.5">
+      <div className="flex-col items-start tracking-widest my-auto gap-0.5 sm:flex md:flex hidden">
         <p className="text-xs text-slate-500 tracking-normal">Coming soon</p>
         {/* about */}
         <div className="text-slate-400">
@@ -77,7 +77,6 @@ export default function PersonalInfo() {
             </p>
           </button>
         </div>
-
         {/* skills */}
         <div className="text-slate-400">
           <button
@@ -96,7 +95,6 @@ export default function PersonalInfo() {
             </p>
           </button>
         </div>
-
         {/* experience */}
         <div className="text-slate-400">
           <button
@@ -115,7 +113,6 @@ export default function PersonalInfo() {
             </p>
           </button>
         </div>
-
         {/* projects */}
         <div className="text-slate-400">
           <button
@@ -135,9 +132,8 @@ export default function PersonalInfo() {
           </button>
         </div>
       </div>
-
       {/* socials */}
-      <div className="flex items-center bottom-0 text-slate-400">
+      <div className="flex items-center bottom-0 text-slate-400 sm:mt-5 sm:-ml-0.5">
         <div className="flex space-x-8 items-center">
           {/* resume */}
           <button
