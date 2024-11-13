@@ -26,7 +26,7 @@ export default function PersonalInfo() {
   };
 
   return (
-    <div className="py-4 sm:py-6 md:py-8 lg:py-20 flex flex-col sticky gap-6 top-0">
+    <div className="py-2 sm:py-6 md:py-8 lg:py-20 flex flex-col sticky gap-6 top-0 h-fit">
       <div className="flex flex-col">
         <div>
           <img src={pfp} className="w-36 h-36 rounded-full mb-2" />

@@ -4,11 +4,14 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
+import cursor from "./assets/cursor.png";
 
 export default function App() {
   const [showLeft, setShowLeft] = useState(false);
   const [showRight, setShowRight] = useState(false);
+  const [newMouseCoordinate, setCoord] = useState<[number, number]>([0, 0]);
 
+  // hook for transition on load
   useEffect(() => {
     const firstTimer = setTimeout(() => {
       setShowLeft(true);
@@ -24,9 +27,30 @@ export default function App() {
     };
   }, []);
 
+  // function for coordinate updating for cursor to follow
+  const handleMovement = (e: React.MouseEvent) => {
+    const mouseCoordinate: [number, number] = [e.clientX, e.clientY];
+    setCoord(mouseCoordinate);
+  };
+
   return (
-    <div className="bg-gradient-to-r from-[#1c2942] via-[#162033] to-[#111927] min-h-screen">
-      <div className="flex flex-col lg:flex-row gap-8 lg:gap-44 mx-auto min-h-screen max-w-screen-xl px-6 py-8 md:px-12 md:py-20 lg:px-24 lg:py-0">
+    <div className="bg-gradient-to-r from-[#1c2942] via-[#162033] to-[#111927] min-h-screen relative">
+      {/* cursor */}
+      <div
+        className="absolute pointer-events-none"
+        style={{
+          left: `${newMouseCoordinate[0] - 512}px`,
+          top: `${newMouseCoordinate[1] - 512}px`,
+        }}
+      >
+        <img src={cursor} />
+      </div>
+
+      {/* main */}
+      <div
+        className="flex flex-col lg:flex-row gap-8 lg:gap-44 mx-auto min-h-screen max-w-screen-xl px-6 py-8 md:px-12 md:py-20 lg:px-24 lg:py-0"
+        onMouseMove={handleMovement}
+      >
         {/* left side info */}
         <div className="w-full lg:w-1/4 lg:sticky lg:top-0 lg:h-screen sm:h-fit">
           <div className="lg:sticky lg:top-24">
