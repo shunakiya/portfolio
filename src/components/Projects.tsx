@@ -59,6 +59,8 @@ export default function Projects() {
         </div>
 
         {/* project 2 */}
+        {/* rewrite so that it talks about my persective and the challenges i faced, since right
+        now it just looks very generic and talks about what the outcome was. do that for project 2 and 3 */}
         <div className="border-l-2 border-slate-400 pb-1 mb-8">
           <div className="ml-4">
             <div className="flex flex-row items-center gap-2 mb-2">

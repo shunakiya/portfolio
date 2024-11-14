@@ -24,9 +24,23 @@ export default function About() {
           grow my toolkit and am ready to face new challenges.
         </p>
         <p>
-          Outside of coding, I enjoy playing Overwatch with{" "}
-          <span>my girlfriend</span>, building and modding custom mechanical
-          keyboards, or liking <span>cat pictures.</span>
+          Outside of coding, I enjoy playing Overwatch with my girlfriend,{" "}
+          <a
+            href="https://pcpartpicker.com/list/pD8CJn"
+            target="_blank"
+            className="font-semibold text-blue-400 hover:text-blue-500"
+          >
+            building computers
+          </a>
+          , building and modding{" "}
+          <a
+            href="https://iv-works.com/av4/"
+            target="_blank"
+            className="font-semibold text-blue-400 hover:text-blue-500"
+          >
+            custom mechanical keyboards
+          </a>
+          , or liking <a>cat pictures.</a>
         </p>
       </div>
     </div>
