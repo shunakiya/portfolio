@@ -71,7 +71,7 @@ export default function App() {
 
         {/* right side info */}
         <div className="py-8 lg:py-20 flex flex-col w-full lg:w-3/4">
-          <div className="space-y-7">
+          <div className="space-y-11">
             <div
               className={`transition-all ease-out duration-1000 ${
                 showRight

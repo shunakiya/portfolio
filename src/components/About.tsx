@@ -24,7 +24,7 @@ export default function About() {
           grow my toolkit and am ready to face new challenges.
         </p>
         <p>
-          Outside of coding, I enjoy playing Overwatch with my girlfriend,{" "}
+          Outside of coding, I enjoy playing PC games with my girlfriend,{" "}
           <a
             href="https://pcpartpicker.com/list/pD8CJn"
             target="_blank"
@@ -32,7 +32,7 @@ export default function About() {
           >
             building computers
           </a>
-          , building and modding{" "}
+          , cooking and baking, building and modding{" "}
           <a
             href="https://iv-works.com/av4/"
             target="_blank"
@@ -41,7 +41,7 @@ export default function About() {
             custom mechanical keyboards
           </a>
           , or liking{" "}
-          <a className="font-semibold text-yellow-200 hover:text-yellow-400 hover:cursor-[url('./assets/yeti.png'),auto]">
+          <a className="font-semibold text-yellow-300 hover:text-yellow-400 hover:cursor-[url('./assets/pepper.png'),auto]">
             cat pictures.
           </a>
         </p>
