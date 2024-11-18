@@ -40,7 +40,10 @@ export default function About() {
           >
             custom mechanical keyboards
           </a>
-          , or liking <a>cat pictures.</a>
+          , or liking{" "}
+          <a className="font-semibold text-yellow-200 hover:text-yellow-400 hover:cursor-[url('./assets/yeti.png'),auto]">
+            cat pictures.
+          </a>
         </p>
       </div>
     </div>

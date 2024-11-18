@@ -37,7 +37,7 @@ export default function App() {
     <div className="bg-gradient-to-r from-[#1c2942] via-[#162033] to-[#111927] min-h-screen relative">
       {/* cursor */}
       <div
-        className="fixed pointer-events-none sm:flex md:flex hidden"
+        className="fixed pointer-events-none sm:flex md:flex hidden select-none"
         style={{
           left: `${newMouseCoordinate[0]}px`,
           top: `${newMouseCoordinate[1]}px`,

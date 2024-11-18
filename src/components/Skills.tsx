@@ -16,7 +16,7 @@ export default function Skills() {
             <p className="text-base mb-0.5 text-[#a4b4cb] transition-colors duration-150 ease-in-out group-hover:text-[#e6f0ff]">
               React
             </p>
-            <p className="text-xs text-slate-500 transition-colors duration-150 ease-in-out group-hover:text-[#a4b4cb]">
+            <p className="text-[10px] text-slate-500 transition-colors duration-150 ease-in-out group-hover:text-[#a4b4cb]">
               JavaScript Framework
             </p>
           </div>
@@ -30,7 +30,7 @@ export default function Skills() {
             <p className="text-base mb-0.5 text-[#a4b4cb] transition-colors duration-150 ease-in-out group-hover:text-[#e6f0ff]">
               Typescript
             </p>
-            <p className="text-xs text-slate-500 transition-colors duration-150 ease-in-out group-hover:text-[#a4b4cb]">
+            <p className="text-[10px] text-slate-500 transition-colors duration-150 ease-in-out group-hover:text-[#a4b4cb]">
               JavaScript but better
             </p>
           </div>
@@ -44,7 +44,7 @@ export default function Skills() {
             <p className="text-base mb-0.5 text-[#a4b4cb] transition-colors duration-150 ease-in-out group-hover:text-[#e6f0ff]">
               Tailwind CSS
             </p>
-            <p className="text-xs text-slate-500 transition-colors duration-150 ease-in-out group-hover:text-[#a4b4cb]">
+            <p className="text-[10px] text-slate-500 transition-colors duration-150 ease-in-out group-hover:text-[#a4b4cb]">
               CSS Framework
             </p>
           </div>
@@ -60,7 +60,7 @@ export default function Skills() {
             <p className="text-base mb-0.5 text-[#a4b4cb] transition-colors duration-150 ease-in-out group-hover:text-[#e6f0ff]">
               Next.js
             </p>
-            <p className="text-xs text-slate-500 transition-colors duration-150 ease-in-out group-hover:text-[#a4b4cb]">
+            <p className="text-[10px] text-slate-500 transition-colors duration-150 ease-in-out group-hover:text-[#a4b4cb]">
               React Framework
             </p>
           </div>
@@ -78,7 +78,7 @@ export default function Skills() {
             <p className="text-base mb-0.5 text-[#a4b4cb] transition-colors duration-150 ease-in-out group-hover:text-[#e6f0ff]">
               MySQL
             </p>
-            <p className="text-xs text-slate-500 transition-colors duration-150 ease-in-out group-hover:text-[#a4b4cb]">
+            <p className="text-[10px] text-slate-500 transition-colors duration-150 ease-in-out group-hover:text-[#a4b4cb]">
               Database System
             </p>
           </div>
@@ -92,7 +92,7 @@ export default function Skills() {
             <p className="text-base mb-0.5 text-[#a4b4cb] transition-colors duration-150 ease-in-out group-hover:text-[#e6f0ff]">
               Flask
             </p>
-            <p className="text-xs text-slate-500 transition-colors duration-150 ease-in-out group-hover:text-[#a4b4cb]">
+            <p className="text-[10px] text-slate-500 transition-colors duration-150 ease-in-out group-hover:text-[#a4b4cb]">
               Micro Framework
             </p>
           </div>
