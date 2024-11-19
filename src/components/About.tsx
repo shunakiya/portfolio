@@ -41,7 +41,7 @@ export default function About() {
             custom mechanical keyboards
           </a>
           , or liking{" "}
-          <a className="font-semibold text-yellow-300 hover:text-yellow-400 hover:cursor-[url('./assets/pepper.png'),auto]">
+          <a className="font-semibold text-teal-400 hover:text-teal-500 hover:cursor-[url('./assets/pepper.png'),auto]">
             cat pictures.
           </a>
         </p>

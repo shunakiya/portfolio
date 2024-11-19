@@ -27,11 +27,19 @@ export default function App() {
     };
   }, []);
 
-  // function for coordinate updating for cursor to follow
-  const handleMovement = (e: React.MouseEvent) => {
-    const mouseCoordinate: [number, number] = [e.clientX, e.clientY];
-    setCoord(mouseCoordinate);
-  };
+  useEffect(() => {
+    // function for coordinate updating for cursor to follow
+    const handleGlobalMovement = (e: MouseEvent) => {
+      const mouseCoordinate: [number, number] = [e.clientX, e.clientY];
+      setCoord(mouseCoordinate);
+    };
+
+    window.addEventListener("mousemove", handleGlobalMovement);
+
+    return () => {
+      window.removeEventListener("mousemove", handleGlobalMovement);
+    };
+  }, []);
 
   return (
     <div className="bg-gradient-to-r from-[#1c2942] via-[#162033] to-[#111927] min-h-screen relative">
@@ -50,10 +58,7 @@ export default function App() {
       </div>
 
       {/* main */}
-      <div
-        className="flex flex-col lg:flex-row gap-8 lg:gap-44 mx-auto min-h-screen max-w-screen-xl px-6 py-8 md:px-12 md:py-20 lg:px-24 lg:py-0"
-        onMouseMove={handleMovement}
-      >
+      <div className="flex flex-col lg:flex-row gap-8 lg:gap-44 mx-auto min-h-screen max-w-screen-xl px-6 py-8 md:px-12 md:py-20 lg:px-24 lg:py-0">
         {/* left side info */}
         <div className="w-full lg:w-1/4 lg:sticky lg:top-0 lg:h-screen sm:h-fit">
           <div className="lg:sticky lg:top-24">
@@ -71,7 +76,7 @@ export default function App() {
 
         {/* right side info */}
         <div className="py-8 lg:py-20 flex flex-col w-full lg:w-3/4">
-          <div className="space-y-11">
+          <div className="space-y-14">
             <div
               className={`transition-all ease-out duration-1000 ${
                 showRight
