@@ -19,7 +19,9 @@ export default function Experience() {
               <p className="text-base font-medium">
                 LOGISTEED Solutions America, Ltd.
               </p>
-              <p className="text-base font-medium">Torrance, California</p>
+              <p className="text-base font-medium">
+                Torrance, California · On-site
+              </p>
               <p className="text-slate-500 text-sm">June 2024 - August 2024</p>
             </div>
           </div>
