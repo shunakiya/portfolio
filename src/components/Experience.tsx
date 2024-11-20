@@ -16,6 +16,9 @@ export default function Experience() {
               <h1 className="text-xl font-semibold">
                 Software Developer Internship
               </h1>
+              <p className="text-base font-medium">
+                LOGISTEED Solutions America, Ltd.
+              </p>
               <p className="text-base font-medium">Torrance, California</p>
               <p className="text-slate-500 text-sm">June 2024 - August 2024</p>
             </div>

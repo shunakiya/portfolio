@@ -18,7 +18,7 @@ export default function Projects() {
               <div className="flex flex-col gap-2">
                 <div className="flex flex-row items-center gap-3">
                   <h1 className="text-xl font-semibold  text-[#e6f0ff] -mb-0.5">
-                    Solenoid Control Using Fingerprint and NFC Sensor
+                    Solenoid Control Using Fingerprint & NFC Sensor
                   </h1>
 
                   <p className="bg-yellow-500 text-xs text-slate-700 px-2 py-1 rounded-lg items-center w-max">
