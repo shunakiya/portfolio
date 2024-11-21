@@ -31,7 +31,7 @@ export default function Skills() {
               Typescript
             </p>
             <p className="text-[11px] lg:text-[10px] md:text-[10px] sm:text-[11px] text-slate-500 transition-colors duration-150 ease-in-out group-hover:text-[#a4b4cb]">
-              JavaScript but better
+              JavaScript but easier
             </p>
           </div>
         </div>

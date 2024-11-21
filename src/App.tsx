@@ -11,7 +11,7 @@ export default function App() {
   const [showRight, setShowRight] = useState(false);
   const [newMouseCoordinate, setCoord] = useState<[number, number]>([0, 0]);
 
-  // hook for transition on load
+  // hook for animation on load
   useEffect(() => {
     const firstTimer = setTimeout(() => {
       setShowLeft(true);
@@ -78,6 +78,7 @@ export default function App() {
         <div className="py-8 lg:py-20 flex flex-col w-full lg:w-3/4">
           <div className="space-y-16">
             <div
+              id="about"
               className={`transition-all ease-out duration-1000 ${
                 showRight
                   ? "opacity-100 translate-y-0"
@@ -88,6 +89,7 @@ export default function App() {
             </div>
 
             <div
+              id="skills"
               className={`transition-all ease-out duration-[1050ms] delay-200 ${
                 showRight
                   ? "opacity-100 translate-y-0"
@@ -98,6 +100,7 @@ export default function App() {
             </div>
 
             <div
+              id="experience"
               className={`transition-all ease-out duration-[1100ms] delay-[300ms] ${
                 showRight
                   ? "opacity-100 translate-y-0"
@@ -108,6 +111,7 @@ export default function App() {
             </div>
 
             <div
+              id="projects"
               className={`transition-all ease-out duration-[1150ms] delay-[400ms] ${
                 showRight
                   ? "opacity-100 translate-y-0"

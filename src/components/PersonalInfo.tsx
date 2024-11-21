@@ -25,11 +25,29 @@ export default function PersonalInfo() {
     window.open("/resume.pdf", "_blank");
   };
 
+  const handleSmoothScroll = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    id: string
+  ) => {
+    e.preventDefault();
+
+    toggleActive(id);
+    const element = document.getElementById(id);
+
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="py-2 sm:py-6 md:py-8 lg:py-20 flex flex-col sticky gap-6 top-0 h-fit">
       <div className="flex flex-col">
         <div>
-          <img src={pfp} className="w-36 h-36 rounded-full mb-2" />
+          <img
+            src={pfp}
+            className="w-36 h-36 rounded-full mb-2"
+            alt="Profile picture"
+          />
           <h1 className="text-4xl font-bold">Shunsuke Akiya</h1>
         </div>
 
@@ -46,7 +64,7 @@ export default function PersonalInfo() {
             <p className="text-[16px] mb-3 -ml-[8.5px]">
               📍La Quinta, California
             </p>
-            <img src={usa} className="w-5 h-3 ml-[7px] mb-2" />
+            <img src={usa} className="w-5 h-3 ml-[7px] mb-2" alt="USA flag" />
           </div>
 
           <p className="text-[15px] w-[335px] text-slate-400">
@@ -58,11 +76,12 @@ export default function PersonalInfo() {
 
       {/* nav buttons */}
       <div className="flex-col items-start tracking-widest my-auto gap-0.5 sm:flex md:flex hidden">
-        <p className="text-xs text-slate-500 tracking-normal">Coming soon</p>
+        <p className="text-xs text-slate-500 tracking-normal">Navigation</p>
         {/* about */}
         <div className="text-slate-400">
-          <button
-            onClick={() => toggleActive("about")}
+          <a
+            href="#about"
+            onClick={(e) => handleSmoothScroll(e, "about")}
             className={`flex flex-row gap-1.5 items-center group ${
               activeButton === "about" ? "text-white" : ""
             }`}
@@ -75,12 +94,13 @@ export default function PersonalInfo() {
             <p className="transition -100 ease-in-out group-hover:text-white">
               About
             </p>
-          </button>
+          </a>
         </div>
         {/* skills */}
         <div className="text-slate-400">
-          <button
-            onClick={() => toggleActive("skills")}
+          <a
+            href="#skills"
+            onClick={(e) => handleSmoothScroll(e, "skills")}
             className={`flex flex-row gap-1.5 items-center group ${
               activeButton === "skills" ? "text-white" : ""
             }`}
@@ -93,12 +113,13 @@ export default function PersonalInfo() {
             <p className="transition -100 ease-in-out group-hover:text-white">
               Skills
             </p>
-          </button>
+          </a>
         </div>
         {/* experience */}
         <div className="text-slate-400">
-          <button
-            onClick={() => toggleActive("experience")}
+          <a
+            href="#experience"
+            onClick={(e) => handleSmoothScroll(e, "experience")}
             className={`flex flex-row gap-1.5 items-center group ${
               activeButton === "experience" ? "text-white" : ""
             }`}
@@ -111,12 +132,13 @@ export default function PersonalInfo() {
             <p className="transition -100 ease-in-out group-hover:text-white">
               Experience
             </p>
-          </button>
+          </a>
         </div>
         {/* projects */}
         <div className="text-slate-400">
-          <button
-            onClick={() => toggleActive("projects")}
+          <a
+            href="#projects"
+            onClick={(e) => handleSmoothScroll(e, "projects")}
             className={`flex flex-row gap-1.5 items-center group ${
               activeButton === "projects" ? "text-white " : ""
             }`}
@@ -129,7 +151,7 @@ export default function PersonalInfo() {
             <p className="transition -100 ease-in-out group-hover:text-white">
               Projects
             </p>
-          </button>
+          </a>
         </div>
       </div>
       {/* socials */}
@@ -148,7 +170,12 @@ export default function PersonalInfo() {
           </button>
 
           {/* github */}
-          <a href="https://github.com/shunakiya" target="_blank" title="GitHub">
+          <a
+            href="https://github.com/shunakiya"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="GitHub"
+          >
             <FaGithub
               size={25}
               className="hover:transition hover:ease-in-out duration-100 hover:fill-[#e6f0ff]"
@@ -159,6 +186,7 @@ export default function PersonalInfo() {
           <a
             href="https://linkedin.com/in/shunsuke-akiya/"
             target="_blank"
+            rel="noopener noreferrer"
             title="LinkedIn"
           >
             <FaLinkedin
