@@ -4,7 +4,7 @@ export default function About() {
       <h1 className="text-2xl font-semibold mb-0.5">About</h1>
       <div className="space-y-4 text-[#a4b4cb]">
         <p>
-          I’m a 21-year-old Full-Stack Developer who enjoys learning and
+          I’m a 21-year-old Full-Stack Developer student who enjoys learning and
           building high-quality applications. I started programming young in{" "}
           <a
             href="https://www.kipr.org/"
