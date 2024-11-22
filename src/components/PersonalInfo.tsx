@@ -1,21 +1,14 @@
-import { useState } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { IoIosMail, IoIosArrowUp } from "react-icons/io";
 import { IoDocumentText } from "react-icons/io5";
 import pfp from "../assets/pfp.png";
 import usa from "../assets/usa.svg";
 
-export default function PersonalInfo() {
-  const [activeButton, setActive] = useState<string | null>(null);
+interface PersonalInfoProps {
+  activeSection: string;
+}
 
-  const toggleActive = (buttonName: string) => {
-    if (activeButton === buttonName) {
-      setActive(null);
-    } else {
-      setActive(buttonName);
-    }
-  };
-
+export default function PersonalInfo({ activeSection }: PersonalInfoProps) {
   const writeEmail = () => {
     const mailLink = "mailto:shunakiya@gmail.com";
     window.open(mailLink, "_blank");
@@ -30,13 +23,7 @@ export default function PersonalInfo() {
     id: string
   ) => {
     e.preventDefault();
-
-    toggleActive(id);
-    const element = document.getElementById(id);
-
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -76,84 +63,28 @@ export default function PersonalInfo() {
 
       {/* nav buttons */}
       <div className="flex-col items-start tracking-widest my-auto gap-0.5 sm:flex md:flex hidden">
-        <p className="text-xs text-slate-500 tracking-normal">Navigation</p>
-        {/* about */}
-        <div className="text-slate-400">
-          <a
-            href="#about"
-            onClick={(e) => handleSmoothScroll(e, "about")}
-            className={`flex flex-row gap-1.5 items-center group ${
-              activeButton === "about" ? "text-white" : ""
-            }`}
-          >
-            <IoIosArrowUp
-              className={`transition-transform duration-300 ease-in-out mt-0.5 transform
-            ${activeButton === "about" ? "rotate-90" : ""}
-            group-hover:rotate-90 group-hover:fill-white`}
-            />
-            <p className="transition -100 ease-in-out group-hover:text-white">
-              About
-            </p>
-          </a>
-        </div>
-        {/* skills */}
-        <div className="text-slate-400">
-          <a
-            href="#skills"
-            onClick={(e) => handleSmoothScroll(e, "skills")}
-            className={`flex flex-row gap-1.5 items-center group ${
-              activeButton === "skills" ? "text-white" : ""
-            }`}
-          >
-            <IoIosArrowUp
-              className={`transition-transform duration-300 ease-in-out mt-0.5 transform
-            ${activeButton === "skills" ? "rotate-90" : ""}
-            group-hover:rotate-90 group-hover:fill-white`}
-            />
-            <p className="transition -100 ease-in-out group-hover:text-white">
-              Skills
-            </p>
-          </a>
-        </div>
-        {/* experience */}
-        <div className="text-slate-400">
-          <a
-            href="#experience"
-            onClick={(e) => handleSmoothScroll(e, "experience")}
-            className={`flex flex-row gap-1.5 items-center group ${
-              activeButton === "experience" ? "text-white" : ""
-            }`}
-          >
-            <IoIosArrowUp
-              className={`transition-transform duration-300 ease-in-out mt-0.5 transform
-            ${activeButton === "experience" ? "rotate-90" : ""}
-            group-hover:rotate-90 group-hover:fill-white`}
-            />
-            <p className="transition -100 ease-in-out group-hover:text-white">
-              Experience
-            </p>
-          </a>
-        </div>
-        {/* projects */}
-        <div className="text-slate-400">
-          <a
-            href="#projects"
-            onClick={(e) => handleSmoothScroll(e, "projects")}
-            className={`flex flex-row gap-1.5 items-center group ${
-              activeButton === "projects" ? "text-white " : ""
-            }`}
-          >
-            <IoIosArrowUp
-              className={`transition-transform duration-300 ease-in-out mt-0.5 transform
-            ${activeButton === "projects" ? "rotate-90" : ""}
-            group-hover:rotate-90 group-hover:fill-white`}
-            />
-            <p className="transition -100 ease-in-out group-hover:text-white">
-              Projects
-            </p>
-          </a>
-        </div>
+        {["about", "skills", "experience", "projects"].map((section) => (
+          <div key={section} className="text-slate-400">
+            <a
+              href={`#${section}`}
+              onClick={(e) => handleSmoothScroll(e, section)}
+              className={`flex flex-row gap-1.5 items-center group ${
+                activeSection === section ? "text-white" : ""
+              }`}
+            >
+              <IoIosArrowUp
+                className={`transition-transform duration-300 ease-in-out mt-0.5 transform
+                ${activeSection === section ? "rotate-90" : ""}
+                group-hover:rotate-90 group-hover:fill-white`}
+              />
+              <p className="transition -100 ease-in-out group-hover:text-white capitalize">
+                {section}
+              </p>
+            </a>
+          </div>
+        ))}
       </div>
+
       {/* socials */}
       <div className="flex items-center bottom-0 text-slate-400 sm:mt-5 sm:-ml-0.5">
         <div className="flex space-x-8 items-center">

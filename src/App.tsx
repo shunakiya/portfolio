@@ -9,17 +9,12 @@ import cursor from "./assets/cursor.png";
 export default function App() {
   const [showLeft, setShowLeft] = useState(false);
   const [showRight, setShowRight] = useState(false);
+  const [activeSection, setActiveSection] = useState<string>("about");
   const [newMouseCoordinate, setCoord] = useState<[number, number]>([0, 0]);
 
-  // hook for animation on load
   useEffect(() => {
-    const firstTimer = setTimeout(() => {
-      setShowLeft(true);
-    }, 150);
-
-    const secondTimer = setTimeout(() => {
-      setShowRight(true);
-    }, 255);
+    const firstTimer = setTimeout(() => setShowLeft(true), 150);
+    const secondTimer = setTimeout(() => setShowRight(true), 255);
 
     return () => {
       clearTimeout(firstTimer);
@@ -28,22 +23,40 @@ export default function App() {
   }, []);
 
   useEffect(() => {
-    // function for coordinate updating for cursor to follow
     const handleGlobalMovement = (e: MouseEvent) => {
-      const mouseCoordinate: [number, number] = [e.clientX, e.clientY];
-      setCoord(mouseCoordinate);
+      setCoord([e.clientX, e.clientY]);
     };
 
     window.addEventListener("mousemove", handleGlobalMovement);
+    return () => window.removeEventListener("mousemove", handleGlobalMovement);
+  }, []);
 
-    return () => {
-      window.removeEventListener("mousemove", handleGlobalMovement);
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = ["about", "skills", "experience", "projects"];
+      const scrollPosition = window.scrollY + window.innerHeight / 8;
+
+      for (const section of sections) {
+        const element = document.getElementById(section);
+        if (
+          element &&
+          element.offsetTop <= scrollPosition &&
+          element.offsetTop + element.offsetHeight > scrollPosition
+        ) {
+          setActiveSection(section);
+          break;
+        }
+      }
     };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <div className="bg-gradient-to-r from-[#1c2942] via-[#162033] to-[#111927] min-h-screen relative">
-      {/* cursor */}
       <div
         className="fixed pointer-events-none sm:flex md:flex hidden select-none"
         style={{
@@ -54,12 +67,10 @@ export default function App() {
           height: "900px",
         }}
       >
-        <img src={cursor} className="w-full h-full" />
+        <img src={cursor} className="w-full h-full" alt="Custom cursor" />
       </div>
 
-      {/* main */}
       <div className="flex flex-col lg:flex-row gap-8 lg:gap-44 mx-auto min-h-screen max-w-screen-xl px-6 py-8 md:px-12 md:py-20 lg:px-24 lg:py-0">
-        {/* left side info */}
         <div className="w-full lg:w-1/4 lg:sticky lg:top-0 lg:h-screen sm:h-fit">
           <div className="lg:sticky lg:top-24">
             <div
@@ -69,12 +80,11 @@ export default function App() {
                   : "opacity-0 -translate-x-16"
               }`}
             >
-              <PersonalInfo />
+              <PersonalInfo activeSection={activeSection} />
             </div>
           </div>
         </div>
 
-        {/* right side info */}
         <div className="py-8 lg:py-20 flex flex-col w-full lg:w-3/4">
           <div className="space-y-16">
             <div
