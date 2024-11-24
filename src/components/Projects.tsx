@@ -17,17 +17,28 @@ export default function Projects() {
               />
               <div className="flex flex-col gap-2">
                 <div className="flex flex-row items-center gap-3">
-                  <h1 className="text-xl font-semibold  text-[#e6f0ff] -mb-0.5">
-                    Solenoid Control Using Fingerprint & NFC Sensor
-                  </h1>
+                  <a
+                    className="flex flex-row items-center group justify-between"
+                    href="https://github.com/shunakiya/salsnb"
+                    target="_blank"
+                  >
+                    <h1 className="text-xl font-semibold text-[#e6f0ff] underline -mb-0.5 group-hover:transition group-hover:ease-in-out duration-[25ms] hover:text-slate-400">
+                      Secure Access Locking Sytem with NFC and Biometrics
+                    </h1>
 
-                  <p className="bg-yellow-500 text-xs text-slate-700 px-2 py-1 rounded-lg items-center w-max">
-                    In Progress
-                  </p>
+                    <MdOpenInNew
+                      className="mt-1.5 ml-2 group-hover:transition group-hover:ease-in-out duration-[25ms] group-hover:text-slate-400"
+                      size={19}
+                    />
+                  </a>
                 </div>
 
                 <p className="text-slate-500 text-sm">
                   Fall 2024 - Spring 2025
+                </p>
+
+                <p className="bg-yellow-500 text-slate-700 text-xs -mt-0.5 py-1 px-2 w-max rounded-lg">
+                  In Progress
                 </p>
               </div>
             </div>
@@ -70,17 +81,20 @@ export default function Projects() {
               />
               <div className="flex flex-col gap-2">
                 <a
-                  className="flex flex-row items-center"
+                  className="flex flex-row items-center group"
                   href="https://github.com/shunakiya/tail-recursion-project"
                   target="_blank"
                 >
-                  <h1 className="text-xl font-semibold underline text-[#e6f0ff] -mb-0.5">
+                  <h1 className="text-xl font-semibold underline text-[#e6f0ff] -mb-0.5 group-hover:transition group-hover:ease-in-out duration-[25ms] hover:text-slate-400">
                     Tail Recursion
                   </h1>
-                  <MdOpenInNew className="mt-1.5 ml-2" size={19} />
+                  <MdOpenInNew
+                    className="mt-1.5 ml-2 group-hover:transition group-hover:ease-in-out duration-[25ms] group-hover:text-slate-400"
+                    size={19}
+                  />
                 </a>
 
-                <p className="text-slate-500 text-sm">Fall 2023</p>
+                <p className="text-slate-400 text-sm">Fall 2023</p>
               </div>
             </div>
 
@@ -117,14 +131,17 @@ export default function Projects() {
               />
               <div className="flex flex-col gap-2">
                 <a
-                  className="flex flex-row items-center"
+                  className="group flex flex-row items-center"
                   href="https://github.com/shunakiya/three-algorithms"
                   target="_blank"
                 >
-                  <h1 className="text-xl font-semibold underline text-[#e6f0ff] -mb-0.5">
+                  <h1 className="text-xl font-semibold underline text-[#e6f0ff] -mb-0.5 group-hover:transition group-hover:ease-in-out duration-[25ms] hover:text-slate-400">
                     3 Search Algorithm
                   </h1>
-                  <MdOpenInNew className="mt-1.5 ml-2" size={19} />
+                  <MdOpenInNew
+                    className="mt-1.5 ml-2 group-hover:ease-in-out duration-[25ms] group-hover:text-slate-400"
+                    size={19}
+                  />
                 </a>
 
                 <p className="text-slate-500 text-sm">Fall 2023</p>

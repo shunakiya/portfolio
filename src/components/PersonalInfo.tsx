@@ -30,11 +30,7 @@ export default function PersonalInfo({ activeSection }: PersonalInfoProps) {
     <div className="py-2 sm:py-6 md:py-8 lg:py-20 flex flex-col sticky gap-6 top-0 h-fit">
       <div className="flex flex-col">
         <div>
-          <img
-            src={pfp}
-            className="w-36 h-36 rounded-full mb-2"
-            alt="Profile picture"
-          />
+          <img src={pfp} className="w-36 h-36 rounded-full mb-2" />
           <h1 className="text-4xl font-bold">Shunsuke Akiya</h1>
         </div>
 
@@ -91,7 +87,7 @@ export default function PersonalInfo({ activeSection }: PersonalInfoProps) {
           {/* resume */}
           <button
             onClick={openResume}
-            className=" hover:transition hover:ease-in-out duration-100 hover:text-[#e6f0ff]"
+            className="hover:transition hover:ease-in-out duration-100 hover:text-[#e6f0ff]"
             title="Resume"
           >
             <div className="flex flex-row border-2 duration-100 border-slate-400 hover:border-[#e6f0ff] rounded-xl p-2 gap-2">
