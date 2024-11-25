@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Analytics } from "@vercel/analytics/react";
 import PersonalInfo from "./components/PersonalInfo";
 import About from "./components/About";
 import Skills from "./components/Skills";
@@ -129,6 +130,8 @@ export default function App() {
               }`}
             >
               <Projects />
+
+              <Analytics />
             </div>
           </div>
         </div>
