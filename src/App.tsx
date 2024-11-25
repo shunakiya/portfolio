@@ -58,6 +58,8 @@ export default function App() {
 
   return (
     <div className="bg-gradient-to-r from-[#1c2942] via-[#162033] to-[#111927] min-h-screen relative">
+      <Analytics />
+
       <div
         className="fixed pointer-events-none sm:flex md:flex hidden select-none"
         style={{
@@ -130,8 +132,6 @@ export default function App() {
               }`}
             >
               <Projects />
-
-              <Analytics />
             </div>
           </div>
         </div>
