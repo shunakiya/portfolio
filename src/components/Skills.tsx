@@ -8,7 +8,7 @@ export default function Skills() {
       <h1 className="text-2xl font-semibold mb-1.5">Skills</h1>
 
       <div className="grid grid-cols-2 grid-rows-3 lg:grid-cols-3 lg:grid-rows-2 md:grid-cols-3 md:grid-rows-2 sm:grid-cols-2 sm:grid-rows-3 gap-4">
-        <div className="group flex flex-row items-center bg-slate-800 p-2 rounded-lg px-3 w-[165px] lg:w-52 md:w-52 sm:w-52 py-2.5 border border-transparent transition-all duration-150 ease-in-out hover:border-slate-600">
+        <div className="group flex flex-row items-center bg-slate-800 p-2 rounded-lg px-3 w-[168px] lg:w-52 md:w-52 sm:w-52 py-2.5 border border-transparent transition-all duration-150 ease-in-out hover:border-slate-600">
           <div className="bg-[#58C4DC30] w-11 h-11 justify-center flex items-center rounded-lg">
             <FaReact size={28} className="fill-[#58C4DC]" />
           </div>
@@ -22,7 +22,7 @@ export default function Skills() {
           </div>
         </div>
 
-        <div className="group flex flex-row items-center bg-slate-800 p-2 rounded-lg px-3 w-[165px] lg:w-52 md:w-52 sm:w-52 py-2.5 border border-transparent transition-all duration-150 ease-in-out hover:border-slate-600">
+        <div className="group flex flex-row items-center bg-slate-800 p-2 rounded-lg px-3 w-[168px] lg:w-52 md:w-52 sm:w-52 py-2.5 border border-transparent transition-all duration-150 ease-in-out hover:border-slate-600">
           <div className="bg-[#3178C630] w-11 h-11 justify-center flex items-center rounded-lg">
             <SiTypescript size={26} className="fill-[#3178C6]" />
           </div>
@@ -36,7 +36,7 @@ export default function Skills() {
           </div>
         </div>
 
-        <div className="group flex flex-row items-center bg-slate-800 p-2 rounded-lg px-3 w-[165px] lg:w-52 md:w-52 sm:w-52 py-2.5 border border-transparent transition-all duration-150 ease-in-out hover:border-slate-600">
+        <div className="group flex flex-row items-center bg-slate-800 p-2 rounded-lg px-3 w-[168px] lg:w-52 md:w-52 sm:w-52 py-2.5 border border-transparent transition-all duration-150 ease-in-out hover:border-slate-600">
           <div className="bg-[#38BDF830] w-11 h-11 justify-center flex items-center rounded-lg">
             <RiTailwindCssFill size={28} className="fill-[#38BDF8]" />
           </div>
@@ -50,7 +50,7 @@ export default function Skills() {
           </div>
         </div>
 
-        <div className="relative group flex flex-row items-center bg-slate-800 p-2 rounded-lg px-3 w-[165px] lg:w-52 md:w-52 sm:w-52 py-2.5 border border-transparent transition-all duration-150 ease-in-out hover:border-slate-600">
+        <div className="relative group flex flex-row items-center bg-slate-800 p-2 rounded-lg px-3 w-[168px] lg:w-52 md:w-52 sm:w-52 py-2.5 border border-transparent transition-all duration-150 ease-in-out hover:border-slate-600">
           <div className="bg-[#d8e1e230] w-11 h-11 justify-center flex items-center rounded-lg">
             <RiNextjsFill size={28} className="fill-[#d8e1e2]" />
           </div>
@@ -68,7 +68,7 @@ export default function Skills() {
           </div>
         </div>
 
-        <div className="group flex flex-row items-center bg-slate-800 p-2 rounded-lg px-3 w-[165px] lg:w-52 md:w-52 sm:w-52 py-2.5 border border-transparent transition-all duration-150 ease-in-out hover:border-slate-600">
+        <div className="group flex flex-row items-center bg-slate-800 p-2 rounded-lg px-3 w-[168px] lg:w-52 md:w-52 sm:w-52 py-2.5 border border-transparent transition-all duration-150 ease-in-out hover:border-slate-600">
           <div className="bg-[#E48E0030] w-11 h-11 justify-center flex items-center rounded-lg">
             <SiMysql size={28} className="fill-[#E48E00]" />
           </div>
@@ -82,7 +82,7 @@ export default function Skills() {
           </div>
         </div>
 
-        <div className="group flex flex-row items-center bg-slate-800 p-2 rounded-lg px-3 w-[165px] lg:w-52 md:w-52 sm:w-52 py-2.5 border border-transparent transition-all duration-150 ease-in-out hover:border-slate-600">
+        <div className="group flex flex-row items-center bg-slate-800 p-2 rounded-lg px-3 w-[168px] lg:w-52 md:w-52 sm:w-52 py-2.5 border border-transparent transition-all duration-150 ease-in-out hover:border-slate-600">
           <div className="bg-[#ffffff30] w-11 h-11 justify-center flex items-center rounded-lg">
             <SiFlask size={28} className="fill-black" />
           </div>
