@@ -26,3 +26,16 @@ body {
   margin: 0;
   padding: 0;
 }
+
+html,
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
