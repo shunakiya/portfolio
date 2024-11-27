@@ -15,8 +15,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-body {
+html {
   @apply bg-gradient-to-r from-[#1c2942] via-[#162033] to-[#111927];
-  min-height: 100vh;
+  min-height: 100%;
   background-attachment: fixed;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
 }

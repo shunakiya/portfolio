@@ -57,7 +57,7 @@ export default function App() {
   }, []);
 
   return (
-    <div className="bg-gradient-to-r from-[#1c2942] via-[#162033] to-[#111927] min-h-screen relative">
+    <div className="min-h-screen relative">
       <Analytics />
 
       <div
@@ -77,7 +77,7 @@ export default function App() {
         <div className="w-full lg:w-1/4 lg:sticky lg:top-0 lg:h-screen sm:h-fit">
           <div className="lg:sticky lg:top-24">
             <div
-              className={`transition-all ease-out duration-[800ms] ${
+              className={`transition-all ease-ou  t duration-[800ms] ${
                 showLeft
                   ? "opacity-100 translate-x-0"
                   : "opacity-0 -translate-x-16"
