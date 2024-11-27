@@ -22,12 +22,12 @@ export default function Projects() {
                     href="https://github.com/shunakiya/salsnb"
                     target="_blank"
                   >
-                    <h1 className="text-xl font-semibold text-[#e6f0ff] underline -mb-0.5 group-hover:transition group-hover:ease-in-out duration-[25ms] hover:text-slate-400">
+                    <h1 className="text-xl w-fit font-semibold text-[#e6f0ff] underline -mb-0.5 group-hover:transition group-hover:ease-in-out duration-[25ms] hover:text-slate-400">
                       Secure Access Locking Sytem with NFC and Biometrics
                     </h1>
 
                     <MdOpenInNew
-                      className="mt-1.5 ml-2 group-hover:transition group-hover:ease-in-out duration-[25ms] group-hover:text-slate-400"
+                      className="mt-1.5 ml-2 group-hover:transition group-hover:ease-in-out duration-[25ms] group-hover:text-slate-400 min-h-[19px] min-w-[19px]"
                       size={19}
                     />
                   </a>
