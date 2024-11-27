@@ -6,7 +6,6 @@ import Skills from "./components/Skills";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import cursor from "./assets/cursor.png";
-import "./iOS.css";
 
 export default function App() {
   const [showLeft, setShowLeft] = useState(false);
