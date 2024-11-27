@@ -72,11 +72,11 @@ export default function App() {
       >
         <img src={cursor} className="w-full h-full" alt="Custom cursor" />
       </div>
-      <div className="flex flex-col lg:flex-row gap-8 lg:gap-44 mx-auto min-h-screen max-w-screen-xl px-6 py-8 md:px-12 md:py-20 lg:px-24 lg:py-0">
+      <div className="flex flex-col lg:flex-row gap-8 lg:gap-44 mx-auto min-h-screen max-w-screen-xl px-5 py-8 md:px-12 md:py-20 lg:px-24 lg:py-0">
         <div className="w-full lg:w-1/4 lg:sticky lg:top-0 lg:h-screen sm:h-fit">
           <div className="lg:sticky lg:top-24">
             <div
-              className={`transition-all ease-ou  t duration-[800ms] ${
+              className={`transition-all ease-out duration-[800ms] ${
                 showLeft
                   ? "opacity-100 translate-x-0"
                   : "opacity-0 -translate-x-16"
@@ -87,7 +87,7 @@ export default function App() {
           </div>
         </div>
 
-        <div className="py-8 lg:py-20 flex flex-col w-full lg:w-3/4">
+        <div className="py-0 lg:py-20 flex flex-col w-full lg:w-3/4">
           <div className="space-y-16">
             <div
               id="about"
