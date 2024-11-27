@@ -58,7 +58,7 @@ export default function App() {
   }, []);
 
   return (
-    <div className="min-h-screen relative">
+    <div className="min-h-screen relative bg-gradient-to-r from-[#1c2942] via-[#162033] to-[#111927]">
       <Analytics />
 
       <div
@@ -73,7 +73,6 @@ export default function App() {
       >
         <img src={cursor} className="w-full h-full" alt="Custom cursor" />
       </div>
-
       <div className="flex flex-col lg:flex-row gap-8 lg:gap-44 mx-auto min-h-screen max-w-screen-xl px-6 py-8 md:px-12 md:py-20 lg:px-24 lg:py-0">
         <div className="w-full lg:w-1/4 lg:sticky lg:top-0 lg:h-screen sm:h-fit">
           <div className="lg:sticky lg:top-24">

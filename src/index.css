@@ -15,27 +15,31 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-html {
+/* iOS safari background color bug fixing */
+html,
+body,
+#root {
   @apply bg-gradient-to-r from-[#1c2942] via-[#162033] to-[#111927];
   min-height: 100%;
+  margin: 0;
+  padding: 0;
   background-attachment: fixed;
 }
 
 body {
   min-height: 100vh;
-  margin: 0;
-  padding: 0;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right)
+    env(safe-area-inset-bottom) env(safe-area-inset-left);
+  min-height: -webkit-fill-available;
 }
 
-html,
-body {
-  min-height: 100%;
-  margin: 0;
-  padding: 0;
+html {
+  height: -webkit-fill-available;
 }
 
 #root {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  min-height: -webkit-fill-available;
 }
