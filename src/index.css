@@ -6,40 +6,29 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
   color: #e6f0ff;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* iOS safari background color bug fixing */
-html,
-body,
-#root {
-  @apply bg-gradient-to-r from-[#1c2942] via-[#162033] to-[#111927];
+html {
   min-height: 100%;
-  margin: 0;
-  padding: 0;
-  background-attachment: fixed;
+  height: 100%;
 }
 
 body {
-  min-height: 100vh;
-  padding: env(safe-area-inset-top) env(safe-area-inset-right)
-    env(safe-area-inset-bottom) env(safe-area-inset-left);
-  min-height: -webkit-fill-available;
-}
-
-html {
-  height: -webkit-fill-available;
+  min-height: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #1c2942, #162033, #111927) fixed;
+  overflow-x: hidden;
 }
 
 #root {
-  min-height: 100vh;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
-  min-height: -webkit-fill-available;
 }
