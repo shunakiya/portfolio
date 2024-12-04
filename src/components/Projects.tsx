@@ -3,7 +3,7 @@ import { MdOpenInNew } from "react-icons/md";
 
 export default function Projects() {
   return (
-    <div>
+    <div className="overflow-hidden">
       <h1 className="text-2xl font-semibold mb-1.5">Projects</h1>
 
       <div className="">
