@@ -20,7 +20,7 @@ export default function Experience() {
                   Autumn Valley International, Inc.
                 </p>
                 <p className="text-base font-medium">
-                  La Quinta, California · Part-time
+                  La Quinta, California · On-site
                 </p>
                 <p className="text-slate-500 text-sm">
                   December 2024 - January 2025
