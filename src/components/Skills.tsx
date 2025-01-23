@@ -1,6 +1,8 @@
 import { FaReact } from "react-icons/fa";
 import { SiTypescript, SiMysql, SiFlask } from "react-icons/si";
 import { RiTailwindCssFill, RiNextjsFill } from "react-icons/ri";
+import figma from "../assets/figma.svg";
+import python from "../assets/python.svg";
 
 export default function Skills() {
   return (
@@ -92,6 +94,34 @@ export default function Skills() {
             </p>
             <p className="text-[11px] lg:text-[10px] md:text-[10px] sm:text-[11px] text-slate-500 transition-colors duration-150 ease-in-out group-hover:text-[#a4b4cb]">
               Micro Framework
+            </p>
+          </div>
+        </div>
+
+        <div className="group flex flex-row items-center bg-slate-800 p-2 rounded-lg px-3 w-[168px] lg:w-52 md:w-52 sm:w-52 py-2.5 border border-transparent transition-all duration-150 ease-in-out hover:border-slate-600">
+          <div className="bg-[#8B879A30] w-11 h-11 justify-center flex items-center rounded-lg">
+            <img src={figma} className="h-9 w-9" />
+          </div>
+          <div className="flex flex-col mx-2 ml-2.5">
+            <p className="text-base mb-0.5 text-[#a4b4cb] transition-colors duration-150 ease-in-out group-hover:text-[#e6f0ff]">
+              Figma
+            </p>
+            <p className="text-[11px] lg:text-[10px] md:text-[10px] sm:text-[11px] text-slate-500 transition-colors duration-150 ease-in-out group-hover:text-[#a4b4cb]">
+              Design Tool
+            </p>
+          </div>
+        </div>
+
+        <div className="group flex flex-row items-center bg-slate-800 p-2 rounded-lg px-3 w-[168px] lg:w-52 md:w-52 sm:w-52 py-2.5 border border-transparent transition-all duration-150 ease-in-out hover:border-slate-600">
+          <div className="bg-[#FFD24130] w-11 h-11 justify-center flex items-center rounded-lg">
+            <img src={python} className="h-8 w-8" />
+          </div>
+          <div className="flex flex-col mx-2 ml-2.5">
+            <p className="text-base mb-0.5 text-[#a4b4cb] transition-colors duration-150 ease-in-out group-hover:text-[#e6f0ff]">
+              Python
+            </p>
+            <p className="text-[11px] lg:text-[10px] md:text-[10px] sm:text-[11px] text-slate-500 transition-colors duration-150 ease-in-out group-hover:text-[#a4b4cb]">
+              Programming Language
             </p>
           </div>
         </div>
