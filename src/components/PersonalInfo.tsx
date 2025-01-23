@@ -51,7 +51,7 @@ export default function PersonalInfo({ activeSection }: PersonalInfoProps) {
           </div>
 
           <p className="text-[15px] w-[335px] text-slate-400">
-            I build scalable, user-friendly applications across front and back
+            I build responsive, user-friendly applications across front and back
             end.
           </p>
         </div>
