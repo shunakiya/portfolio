@@ -7,7 +7,7 @@ Welcome to my portfolio page! It's built using:
 - Tailwind
 - React-icons
 
-As a disclaimer, my portfolio was **heavily** inspired by:
+My portfolio was **heavily** inspired by:
 
 - [Brittany Chiang](https://brittanychiang.com/)
 - [Oskar Glen](https://oskarfranttiglen.com/)
