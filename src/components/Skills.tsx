@@ -73,7 +73,7 @@ export default function Skills() {
 
         <div className="group flex flex-row items-center bg-slate-800 p-2 rounded-lg px-3 w-[168px] lg:w-52 md:w-52 sm:w-52 py-2.5 border border-transparent transition-all duration-150 ease-in-out hover:border-slate-600">
           <div className="bg-[#FF3E0030] w-11 h-11 justify-center flex items-center rounded-lg">
-            <img src={svelte} className="" />
+            <img src={svelte} className="h-10 w-10" />
           </div>
           <div className="flex flex-col mx-2 ml-2.5">
             <p className="text-base mb-0.5 text-[#a4b4cb] transition-colors duration-150 ease-in-out group-hover:text-[#e6f0ff]">
