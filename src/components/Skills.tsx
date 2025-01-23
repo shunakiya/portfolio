@@ -1,9 +1,9 @@
 import { FaReact } from "react-icons/fa";
 import { SiTypescript, SiMysql, SiFlask } from "react-icons/si";
 import { RiTailwindCssFill, RiNextjsFill } from "react-icons/ri";
-import figma from "../assets/figma.svg";
-import python from "../assets/python.svg";
-import svelte from "../assets/svelte.svg";
+import figma from "../assets/logos/figma.svg";
+import python from "../assets/logos/python.svg";
+import svelte from "../assets/logos/svelte.svg";
 
 export default function Skills() {
   return (

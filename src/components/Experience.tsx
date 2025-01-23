@@ -1,5 +1,5 @@
-import lsa from "../assets/lsa.png";
-import autumn_valley from "../assets/akiya.png";
+import lsa from "../assets/logos/lsa.png";
+import autumn_valley from "../assets/logos/akiya.png";
 
 export default function Experience() {
   return (

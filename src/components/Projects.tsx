@@ -1,4 +1,4 @@
-import csusb from "../assets/csusb.png";
+import csusb from "../assets/logos/csusb.png";
 import { MdOpenInNew } from "react-icons/md";
 
 export default function Projects() {
