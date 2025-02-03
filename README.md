@@ -10,7 +10,6 @@ Welcome to my portfolio page!
 - Has a unique spotlight background effect for added visual appeal
 
 My portfolio was inspired by:
-
 - [Brittany Chiang](https://brittanychiang.com/)
 - [Oskar Glen](https://oskarfranttiglen.com/)
 - [Andrija Djordjevic](https://andrijaweb.vercel.app/)
