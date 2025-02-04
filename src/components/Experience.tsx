@@ -33,23 +33,21 @@ export default function Experience() {
                 <p>•</p>
                 <p>
                   Developed a company website with a focus on user experience
-                  and interactivity.
+                  and interactivity with React, TypeScript, and Tailwind.
                 </p>
               </li>
               <li className="flex gap-2">
                 <p>•</p>
                 <p>
                   Integrated EmailJS for seamless email functionality, and
-                  i18next for multilingual support, ensuring accessibility
-                  across regions
+                  i18next for multilingual support,
                 </p>
               </li>
               <li className="flex gap-2">
                 <p>•</p>
                 <p>
                   Incorporated a dynamic globe feature to visually display all
-                  exported locations, enhancing website interactivity with
-                  React, TypeScript, and Tailwind
+                  exported locations
                 </p>
               </li>
             </div>
