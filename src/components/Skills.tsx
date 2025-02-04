@@ -113,7 +113,7 @@ export default function Skills() {
           </div>
         </div>
 
-        <div className="group flex flex-row items-center bg-slate-800 p-2 rounded-lg px-3 w-[168px] lg:w-52 md:w-52 sm:w-52 py-2.5 border border-transparent transition-all duration-150 ease-in-out hover:border-slate-600">
+        <div className="relative group flex flex-row items-center bg-slate-800 p-2 rounded-lg px-3 w-[168px] lg:w-52 md:w-52 sm:w-52 py-2.5 border border-transparent transition-all duration-150 ease-in-out hover:border-slate-600">
           <div className="bg-[#8B879A30] w-11 h-11 justify-center flex items-center rounded-lg">
             <img src={figma} className="h-9 w-9" />
           </div>
@@ -124,6 +124,10 @@ export default function Skills() {
             <p className="text-[11px] lg:text-[10px] md:text-[10px] sm:text-[11px] text-slate-500 transition-colors duration-150 ease-in-out group-hover:text-[#a4b4cb]">
               Design Tool
             </p>
+          </div>
+
+          <div className="absolute top-1 right-1 bg-yellow-500 text-[7px] lg:text-[10px] md:text-[10px] sm:text-[7px] text-slate-700 px-1.5 py-0.5 rounded-lg">
+            In Progress
           </div>
         </div>
 
