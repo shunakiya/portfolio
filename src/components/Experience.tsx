@@ -33,7 +33,7 @@ export default function Experience() {
                 <p>•</p>
                 <p>
                   Developed a company website with a focus on user experience
-                  and interactivity with React, TypeScript, and Tailwind.
+                  and interactivity.
                 </p>
               </li>
               <li className="flex gap-2">
@@ -45,10 +45,7 @@ export default function Experience() {
               </li>
               <li className="flex gap-2">
                 <p>•</p>
-                <p>
-                  Incorporated a dynamic globe feature to visually display all
-                  exported locations
-                </p>
+                <p>Utilized React, TypeScript, and Tailwind CSS.</p>
               </li>
             </div>
           </div>
@@ -92,7 +89,7 @@ export default function Experience() {
               <li className="flex gap-2">
                 <p>•</p>
                 <p>
-                  Utilized Svelte as Frontend, Flask as Backend, and MySQL for
+                  Utilized Svelte as Front-end, Flask as Back-end, and MySQL for
                   database.
                 </p>
               </li>
