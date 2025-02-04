@@ -45,7 +45,7 @@ export default function Experience() {
               </li>
               <li className="flex gap-2">
                 <p>•</p>
-                <p>Utilized React, TypeScript, and Tailwind CSS.</p>
+                <p>Utilized React as Front-end, TypeScript for developer productivity, and Tailwind CSS for styling.</p>
               </li>
             </div>
           </div>
