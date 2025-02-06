@@ -94,7 +94,7 @@ export default function Projects() {
                   />
                 </a>
 
-                <p className="text-slate-400 text-sm">Fall 2023</p>
+                <p className="text-slate-500 text-sm">Fall 2023</p>
               </div>
             </div>
 
