@@ -11,18 +11,18 @@ export interface ProjectsList {
 }
 
 export const projectsListItems: ProjectsList[] = [
-  //   {
-  //     logo: csusb,
-  //     title: "Secure Access Locking Sytem with NFC and Biometrics",
-  //     time: "Fall 2024 - Spring 2025",
-  //     repoPage: "https://github.com/shunakiya/salsnb",
-  //     desc1:
-  //       "Developed a smart-lock with fingerprint sensor, NFC, and key access.",
-  //     desc2:
-  //       "Integrated remote control, solenoid-powered lock, fingerprint reader, and smartphone NFC system.",
-  //     desc3:
-  //       "Used a Raspberry Pi to host a Flask backend server, with data fetched by a React frontend designed with Tailwind.",
-  //   },
+  {
+    logo: csusb,
+    title: "Secure Access Locking Sytem with NFC and Biometrics",
+    time: "Fall 2024 - Spring 2025",
+    repoPage: "https://github.com/shunakiya/salsnb",
+    desc1:
+      "Developed a smart-lock with fingerprint sensor, NFC, and key access.",
+    desc2:
+      "Integrated remote control, solenoid-powered lock, fingerprint reader, and smartphone NFC system.",
+    desc3:
+      "Used a Raspberry Pi to host a Flask backend server, with data fetched by a React frontend designed with Tailwind.",
+  },
   {
     logo: csusb,
     title: "Tail Recursion",
