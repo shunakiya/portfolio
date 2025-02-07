@@ -24,7 +24,7 @@ export default function Skills() {
       </> */}
 
       <div className="grid grid-cols-2 grid-rows-3 lg:grid-cols-3 lg:grid-rows-2 md:grid-cols-3 md:grid-rows-2 sm:grid-cols-2 sm:grid-rows-3 gap-4">
-        <div className="group flex flex-row items-center bg-slate-800 p-2 rounded-lg px-3 w-[168px] lg:w-52 md:w-52 sm:w-52 py-2.5 border border-transparent transition-all duration-150 ease-in-out hover:border-slate-600">
+        <div className="group flex flex-row items-center bg-slate-800 p-2 rounded-lg px-3 w-[168px] lg:w-52 md:w-52 sm:w-52 py-2.5 border border-transparent transition-all duration-150 ease-in-out hover:border-slate-600 hover:bg-[#252f3e]">
           <div className="bg-[#58C4DC30] w-11 h-11 justify-center flex items-center rounded-lg">
             <FaReact size={28} className="fill-[#58C4DC]" />
           </div>
@@ -38,7 +38,7 @@ export default function Skills() {
           </div>
         </div>
 
-        <div className="group flex flex-row items-center bg-slate-800 p-2 rounded-lg px-3 w-[168px] lg:w-52 md:w-52 sm:w-52 py-2.5 border border-transparent transition-all duration-150 ease-in-out hover:border-slate-600">
+        <div className="group flex flex-row items-center bg-slate-800 p-2 rounded-lg px-3 w-[168px] lg:w-52 md:w-52 sm:w-52 py-2.5 border border-transparent transition-all duration-150 ease-in-out hover:border-slate-600 hover:bg-[#252f3e]">
           <div className="bg-[#3178C630] w-11 h-11 justify-center flex items-center rounded-lg">
             <SiTypescript size={26} className="fill-[#3178C6]" />
           </div>
@@ -52,7 +52,7 @@ export default function Skills() {
           </div>
         </div>
 
-        <div className="group flex flex-row items-center bg-slate-800 p-2 rounded-lg px-3 w-[168px] lg:w-52 md:w-52 sm:w-52 py-2.5 border border-transparent transition-all duration-150 ease-in-out hover:border-slate-600">
+        <div className="group flex flex-row items-center bg-slate-800 p-2 rounded-lg px-3 w-[168px] lg:w-52 md:w-52 sm:w-52 py-2.5 border border-transparent transition-all duration-150 ease-in-out hover:border-slate-600 hover:bg-[#252f3e]">
           <div className="bg-[#38BDF830] w-11 h-11 justify-center flex items-center rounded-lg">
             <RiTailwindCssFill size={28} className="fill-[#38BDF8]" />
           </div>
@@ -66,7 +66,7 @@ export default function Skills() {
           </div>
         </div>
 
-        <div className="group flex flex-row items-center bg-slate-800 p-2 rounded-lg px-3 w-[168px] lg:w-52 md:w-52 sm:w-52 py-2.5 border border-transparent transition-all duration-150 ease-in-out hover:border-slate-600">
+        <div className="group flex flex-row items-center bg-slate-800 p-2 rounded-lg px-3 w-[168px] lg:w-52 md:w-52 sm:w-52 py-2.5 border border-transparent transition-all duration-150 ease-in-out hover:border-slate-600 hover:bg-[#252f3e]">
           <div className="bg-[#FF3E0030] w-11 h-11 justify-center flex items-center rounded-lg">
             <img src={svelte} className="h-10 w-10" />
           </div>
@@ -80,7 +80,7 @@ export default function Skills() {
           </div>
         </div>
 
-        <div className="group flex flex-row items-center bg-slate-800 p-2 rounded-lg px-3 w-[168px] lg:w-52 md:w-52 sm:w-52 py-2.5 border border-transparent transition-all duration-150 ease-in-out hover:border-slate-600">
+        <div className="group flex flex-row items-center bg-slate-800 p-2 rounded-lg px-3 w-[168px] lg:w-52 md:w-52 sm:w-52 py-2.5 border border-transparent transition-all duration-150 ease-in-out hover:border-slate-600 hover:bg-[#252f3e]">
           <div className="bg-[#E48E0030] w-11 h-11 justify-center flex items-center rounded-lg">
             <SiMysql size={28} className="fill-[#E48E00]" />
           </div>
@@ -94,7 +94,7 @@ export default function Skills() {
           </div>
         </div>
 
-        <div className="group flex flex-row items-center bg-slate-800 p-2 rounded-lg px-3 w-[168px] lg:w-52 md:w-52 sm:w-52 py-2.5 border border-transparent transition-all duration-150 ease-in-out hover:border-slate-600">
+        <div className="group flex flex-row items-center bg-slate-800 p-2 rounded-lg px-3 w-[168px] lg:w-52 md:w-52 sm:w-52 py-2.5 border border-transparent transition-all duration-150 ease-in-out hover:border-slate-600 hover:bg-[#252f3e]">
           <div className="bg-[#ffffff30] w-11 h-11 justify-center flex items-center rounded-lg">
             <SiFlask size={28} className="fill-black" />
           </div>
@@ -108,7 +108,7 @@ export default function Skills() {
           </div>
         </div>
 
-        <div className="relative group flex flex-row items-center bg-slate-800 p-2 rounded-lg px-3 w-[168px] lg:w-52 md:w-52 sm:w-52 py-2.5 border border-transparent transition-all duration-150 ease-in-out hover:border-slate-600">
+        <div className="group flex flex-row items-center bg-slate-800 p-2 rounded-lg px-3 w-[168px] lg:w-52 md:w-52 sm:w-52 py-2.5 border border-transparent transition-all duration-150 ease-in-out hover:border-slate-600 hover:bg-[#252f3e]">
           <div className="bg-[#8B879A30] w-11 h-11 justify-center flex items-center rounded-lg">
             <img src={figma} className="h-9 w-9" />
           </div>
@@ -120,13 +120,9 @@ export default function Skills() {
               Design Tool
             </p>
           </div>
-
-          <div className="absolute top-1 right-1 bg-yellow-500 text-[7px] lg:text-[10px] md:text-[10px] sm:text-[7px] text-slate-700 px-1.5 py-0.5 rounded-lg">
-            In Progress
-          </div>
         </div>
 
-        <div className="group flex flex-row items-center bg-slate-800 p-2 rounded-lg px-3 w-[168px] lg:w-52 md:w-52 sm:w-52 py-2.5 border border-transparent transition-all duration-150 ease-in-out hover:border-slate-600">
+        <div className="group flex flex-row items-center bg-slate-800 p-2 rounded-lg px-3 w-[168px] lg:w-52 md:w-52 sm:w-52 py-2.5 border border-transparent transition-all duration-150 ease-in-out hover:border-slate-600 hover:bg-[#252f3e]">
           <div className="bg-[#FFD24130] w-11 h-11 justify-center flex items-center rounded-lg">
             <img src={python} className="h-8 w-8" />
           </div>
