@@ -40,17 +40,12 @@ export default function Experience() {
                 <p>•</p>
                 <p>
                   Integrated EmailJS for seamless email functionality, and
-                  i18next for multilingual support, ensuring accessibility
-                  across regions
+                  i18next for multilingual support,
                 </p>
               </li>
               <li className="flex gap-2">
                 <p>•</p>
-                <p>
-                  Incorporated a dynamic globe feature to visually display all
-                  exported locations, enhancing website interactivity with
-                  React, TypeScript, and Tailwind
-                </p>
+                <p>Utilized React as Front-end, TypeScript for developer productivity, and Tailwind CSS for styling.</p>
               </li>
             </div>
           </div>
@@ -94,7 +89,7 @@ export default function Experience() {
               <li className="flex gap-2">
                 <p>•</p>
                 <p>
-                  Utilized Svelte as Frontend, Flask as Backend, and MySQL for
+                  Utilized Svelte as Front-end, Flask as Back-end, and MySQL for
                   database.
                 </p>
               </li>
