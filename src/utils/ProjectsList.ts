@@ -3,6 +3,7 @@ import csusb from "../assets/logos/csusb.png";
 export interface ProjectsList {
   logo: string;
   title: string;
+  location: string;
   time: string;
   repoPage: string;
   desc1: string;
@@ -14,6 +15,7 @@ export const projectsListItems: ProjectsList[] = [
   {
     logo: csusb,
     title: "Secure Access Locking Sytem with NFC and Biometrics",
+    location: "California State University, San Bernardino",
     time: "Fall 2024 - Spring 2025",
     repoPage: "https://github.com/shunakiya/salsnb",
     desc1:
@@ -26,6 +28,7 @@ export const projectsListItems: ProjectsList[] = [
   {
     logo: csusb,
     title: "Tail Recursion",
+    location: "California State University, San Bernardino",
     time: "Fall 2023",
     repoPage: "https://github.com/shunakiya/tail-recursion-project",
     desc1:
@@ -37,6 +40,7 @@ export const projectsListItems: ProjectsList[] = [
   {
     logo: csusb,
     title: "3 Search Algorithm",
+    location: "California State University, San Bernardino",
     time: "Fall 2023",
     repoPage: "https://github.com/shunakiya/three-algorithms",
     desc1: "Implemented graph search algorithms (DFS, BFS, A* Search) in Java.",

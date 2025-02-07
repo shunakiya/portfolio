@@ -18,7 +18,7 @@ export default function Projects() {
                   src={csusb}
                   className="w-[68px] h-[68px] rounded-full  mr-1"
                 />
-                <div className="flex flex-col gap-2">
+                <div className="flex flex-col">
                   <a
                     className="flex flex-row items-center group"
                     href={item.repoPage}
@@ -32,6 +32,8 @@ export default function Projects() {
                       size={19}
                     />
                   </a>
+
+                  <p className="text-base font-medium">{item.location}</p>
 
                   <p className="text-slate-500 text-sm">{item.time}</p>
                 </div>
