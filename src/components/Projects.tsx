@@ -1,5 +1,6 @@
 import csusb from "../assets/logos/csusb.png";
 import { MdOpenInNew } from "react-icons/md";
+import { ProjectsList, projectsListItems } from "../utils/ProjectsList";
 
 export default function Projects() {
   return (
@@ -8,6 +9,7 @@ export default function Projects() {
 
       <div className="">
         {/* project 1 */}
+        {/* UPDATE THIS ONCE THE SEMESTER IS OVER */}
         <div className="border-l-2 border-slate-400 pb-1 mb-8">
           <div className="ml-4">
             <div className="flex flex-row items-center gap-2 mb-2">
@@ -72,107 +74,50 @@ export default function Projects() {
         {/* project 2 */}
         {/* rewrite so that it talks about my persective and the challenges i faced, since right
         now it just looks very generic and talks about what the outcome was. do that for project 2 and 3 */}
-        <div className="border-l-2 border-slate-400 pb-1 mb-8">
-          <div className="ml-4">
-            <div className="flex flex-row items-center gap-2 mb-2">
-              <img
-                src={csusb}
-                className="w-[68px] h-[68px] rounded-full  mr-1"
-              />
-              <div className="flex flex-col gap-2">
-                <a
-                  className="flex flex-row items-center group"
-                  href="https://github.com/shunakiya/tail-recursion-project"
-                  target="_blank"
-                >
-                  <h1 className="text-xl font-semibold underline text-[#e6f0ff] -mb-0.5 group-hover:transition group-hover:ease-in-out duration-[25ms] hover:text-slate-400">
-                    Tail Recursion
-                  </h1>
-                  <MdOpenInNew
-                    className="mt-1.5 ml-2 group-hover:transition group-hover:ease-in-out duration-[25ms] group-hover:text-slate-400"
-                    size={19}
-                  />
-                </a>
+        {projectsListItems.map((item: ProjectsList, index: number) => (
+          <div key={index} className="border-l-2 border-slate-400 pb-1 mb-8">
+            <div className="ml-4">
+              <div className="flex flex-row items-center gap-2 mb-2">
+                <img
+                  src={csusb}
+                  className="w-[68px] h-[68px] rounded-full  mr-1"
+                />
+                <div className="flex flex-col gap-2">
+                  <a
+                    className="flex flex-row items-center group"
+                    href={item.repoPage}
+                    target="_blank"
+                  >
+                    <h1 className="text-xl font-semibold underline text-[#e6f0ff] -mb-0.5 group-hover:transition group-hover:ease-in-out duration-[25ms] hover:text-slate-400">
+                      {item.title}
+                    </h1>
+                    <MdOpenInNew
+                      className="mt-1.5 ml-2 group-hover:transition group-hover:ease-in-out duration-[25ms] group-hover:text-slate-400"
+                      size={19}
+                    />
+                  </a>
 
-                <p className="text-slate-500 text-sm">Fall 2023</p>
+                  <p className="text-slate-500 text-sm">{item.time}</p>
+                </div>
+              </div>
+
+              <div className="list-inside space-y-1 text-[#a4b4cb]">
+                <li className="flex gap-2">
+                  <p>•</p>
+                  <p>{item.desc1}</p>
+                </li>
+                <li className="flex gap-2">
+                  <p>•</p>
+                  <p>{item.desc2}</p>
+                </li>
+                <li className="flex gap-2">
+                  <p>•</p>
+                  <p>{item.desc3}</p>
+                </li>
               </div>
             </div>
-
-            <div className="list-inside space-y-1 text-[#a4b4cb]">
-              <li className="flex gap-2">
-                <p>•</p>
-                <p>
-                  Implemented 12 tail-recursive functions that handle common
-                  Java operations.
-                </p>
-              </li>
-              <li className="flex gap-2">
-                <p>•</p>
-                <p>Optimized for time complexity (aimed for O(n) or better).</p>
-              </li>
-              <li className="flex gap-2">
-                <p>•</p>
-                <p>
-                  Followed constraints: no non-local variables, no arrays, no
-                  non-recursive loops.
-                </p>
-              </li>
-            </div>
           </div>
-        </div>
-
-        {/* project 3 */}
-        <div className="border-l-2 border-slate-400 pb-1 mb-8">
-          <div className="ml-4">
-            <div className="flex flex-row items-center gap-2 mb-2">
-              <img
-                src={csusb}
-                className="w-[68px] h-[68px] rounded-full  mr-1"
-              />
-              <div className="flex flex-col gap-2">
-                <a
-                  className="group flex flex-row items-center"
-                  href="https://github.com/shunakiya/three-algorithms"
-                  target="_blank"
-                >
-                  <h1 className="text-xl font-semibold underline text-[#e6f0ff] -mb-0.5 group-hover:transition group-hover:ease-in-out duration-[25ms] hover:text-slate-400">
-                    3 Search Algorithm
-                  </h1>
-                  <MdOpenInNew
-                    className="mt-1.5 ml-2 group-hover:ease-in-out duration-[25ms] group-hover:text-slate-400"
-                    size={19}
-                  />
-                </a>
-
-                <p className="text-slate-500 text-sm">Fall 2023</p>
-              </div>
-            </div>
-
-            <div className="list-inside space-y-1 text-[#a4b4cb]">
-              <li className="flex gap-2">
-                <p>•</p>
-                <p>
-                  Implemented graph search algorithms (DFS, BFS, A* Search) in
-                  Java.
-                </p>
-              </li>
-              <li className="flex gap-2">
-                <p>•</p>
-                <p>
-                  Utilized object-oriented programming concepts like abstract
-                  classes, interfaces, and inheritance.
-                </p>
-              </li>
-              <li className="flex gap-2">
-                <p>•</p>
-                <p>
-                  Solved pathfinding problems using Maze and Sliding Puzzle as
-                  examples.
-                </p>
-              </li>
-            </div>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );
