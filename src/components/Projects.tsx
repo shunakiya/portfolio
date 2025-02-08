@@ -24,7 +24,7 @@ export default function Projects() {
                     href={item.repoPage}
                     target="_blank"
                   >
-                    <h1 className="text-xl font-semibold text-[#e6f0ff] -mb-0.5 group-hover:transition group-hover:ease-in-out duration-[25ms] hover:text-slate-400">
+                    <h1 className="text-xl font-semibold text-[#e6f0ff] group-hover:transition group-hover:ease-in-out duration-[25ms] hover:text-slate-400">
                       {item.title}
                     </h1>
                     <MdOpenInNew
