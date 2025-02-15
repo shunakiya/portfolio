@@ -1,4 +1,5 @@
 import csusb from "../assets/logos/csusb.png";
+import ponder from "../assets/logos/ponder.png";
 
 export interface ProjectsList {
   logo: string;
@@ -12,6 +13,19 @@ export interface ProjectsList {
 }
 
 export const projectsListItems: ProjectsList[] = [
+  {
+    logo: ponder,
+    title: "Ponder (In Progress)",
+    location: "San Bernardino, California",
+    time: "february 2025 - Present",
+    repoPage: "https://ponder-it.vercel.app",
+    desc1:
+      "A fast, simple and lightweight dictionary app designed with a modern and clean UI.",
+    desc2:
+      "Integrates Merriam-Webster and GNews APIs for definitions and examples, with plans for web scraping with Cheerio to expand content.",
+    desc3:
+      "Developed with React, TypeScript, and Tailwind CSS; future iteration aims to migrate to Next.js, and potentially add Supabase or MongoDB.",
+  },
   {
     logo: csusb,
     title: "Secure Access Locking Sytem with NFC and Biometrics",

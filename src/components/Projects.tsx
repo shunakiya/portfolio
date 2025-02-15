@@ -1,4 +1,3 @@
-import csusb from "../assets/logos/csusb.png";
 import { MdOpenInNew } from "react-icons/md";
 import { ProjectsList, projectsListItems } from "../utils/ProjectsList";
 
@@ -15,7 +14,7 @@ export default function Projects() {
             <div className="ml-4">
               <div className="flex flex-row items-center gap-2 mb-2">
                 <img
-                  src={csusb}
+                  src={item.logo}
                   className="w-[68px] h-[68px] rounded-full  mr-1"
                 />
                 <div className="flex flex-col">
