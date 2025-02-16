@@ -1,10 +1,10 @@
 import { FaReact } from "react-icons/fa";
 import { SiTypescript, SiMysql, SiFlask } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
+import { SiNextdotjs } from "react-icons/si";
 // import { SkillsList, skillsListItems } from "../utils/SkillsList";
 import figma from "../assets/logos/figma.svg";
 import python from "../assets/logos/python.svg";
-import svelte from "../assets/logos/svelte.svg";
 
 export default function Skills() {
   return (
@@ -33,7 +33,7 @@ export default function Skills() {
               React
             </p>
             <p className="text-[11px] lg:text-[10px] md:text-[10px] sm:text-[11px] text-slate-500 transition-colors duration-150 ease-in-out group-hover:text-[#a4b4cb]">
-              JavaScript Framework
+              JavaScript Library
             </p>
           </div>
         </div>
@@ -67,15 +67,15 @@ export default function Skills() {
         </div>
 
         <div className="group flex flex-row items-center bg-slate-800 p-2 rounded-lg px-3 w-[168px] lg:w-52 md:w-52 sm:w-52 py-2.5 border border-transparent transition-all duration-150 ease-in-out hover:border-slate-600 hover:bg-[#252f3e]">
-          <div className="bg-[#FF3E0030] w-11 h-11 justify-center flex items-center rounded-lg">
-            <img src={svelte} className="h-10 w-10" />
+          <div className="bg-white/10 w-11 h-11 justify-center flex items-center rounded-lg">
+            <SiNextdotjs size={28} className="fill-white/60" />
           </div>
           <div className="flex flex-col mx-2 ml-2.5">
             <p className="text-base mb-0.5 text-[#a4b4cb] transition-colors duration-150 ease-in-out group-hover:text-[#e6f0ff]">
-              Svelte
+              Next.js <span className="text-xs">(In progress)</span>
             </p>
             <p className="text-[11px] lg:text-[10px] md:text-[10px] sm:text-[11px] text-slate-500 transition-colors duration-150 ease-in-out group-hover:text-[#a4b4cb]">
-              JavaScript Framework
+              React Framework
             </p>
           </div>
         </div>
