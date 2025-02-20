@@ -17,7 +17,7 @@ export const projectsListItems: ProjectsList[] = [
     logo: ponder,
     title: "Ponder (In Progress)",
     location: "San Bernardino, California",
-    time: "february 2025 - Present",
+    time: "February 2025 - Present",
     repoPage: "https://ponder-it.vercel.app",
     desc1:
       "A fast, simple and lightweight dictionary app designed with a modern and clean UI.",
