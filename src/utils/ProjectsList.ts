@@ -30,7 +30,7 @@ export const projectsListItems: ProjectsList[] = [
     logo: csusb,
     title: "Secure Access Locking Sytem with NFC and Biometrics",
     location: "California State University, San Bernardino",
-    time: "Fall 2024 - Spring 2025",
+    time: "Fall 2024 - Present",
     repoPage: "https://github.com/shunakiya/salsnb",
     desc1:
       "Developed a smart-lock with fingerprint sensor, NFC, and key access.",
