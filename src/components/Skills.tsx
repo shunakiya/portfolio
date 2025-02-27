@@ -72,7 +72,7 @@ export default function Skills() {
           </div>
           <div className="flex flex-col mx-2 ml-2.5">
             <p className="text-base mb-0.5 text-[#a4b4cb] transition-colors duration-150 ease-in-out group-hover:text-[#e6f0ff]">
-              Next.js <span className="text-xs">(In progress)</span>
+              Next.js
             </p>
             <p className="text-[11px] lg:text-[10px] md:text-[10px] sm:text-[11px] text-slate-500 transition-colors duration-150 ease-in-out group-hover:text-[#a4b4cb]">
               React Framework
