@@ -88,7 +88,7 @@ export default function App() {
         </div>
 
         <div className="py-0 lg:py-20 flex flex-col w-full lg:w-3/4">
-          <div className="space-y-8 lg:space-y-16 md:space-y-16">
+          <div className="space-y-8 lg:space-y-12 md:space-y-12">
             <div
               id="about"
               className={`transition-all ease-out duration-1000 ${
