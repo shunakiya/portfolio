@@ -16,7 +16,7 @@ export interface ProjectsList {
 export const projectsListItems: ProjectsList[] = [
   {
     logo: ponder,
-    title: "Ponder (In Progress)",
+    title: "Ponder",
     location: "San Bernardino, California",
     time: "February 2025 - Present",
     repoPage: "https://ponder-it.vercel.app",
