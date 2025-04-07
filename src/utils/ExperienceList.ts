@@ -20,11 +20,11 @@ export const experienceListItems: ExperienceList[] = [
     location: "La Quinta, California · On-site",
     time: "December 2024 - January 2025",
     desc1:
-      "Developed a company website with a focus on user experience and interactivity.",
+      "Produced a user-centric company website, prioritizing engagement and interactive features.",
     desc2:
-      "Integrated EmailJS for seamless email functionality, and i18next for multilingual support,",
+      "Embedded EmailJS and i18next, expanding global accessibility through streamlined email and multilingual functionality.",
     desc3:
-      "Utilized React as Front-end, TypeScript for developer productivity, and Tailwind CSS for styling.",
+      "Incorporated a dynamic globe feature to visually display all exported locations, enhancing website interactivity with React, TypeScript, and Tailwind CSS.",
   },
   {
     logo: lsa,
@@ -32,10 +32,11 @@ export const experienceListItems: ExperienceList[] = [
     company: "LOGISTEED Solutions America, Ltd.",
     location: "Torrance, California · On-site",
     time: "June 2024 - August 2024",
-    desc1: "Developed a worklog application for the company.",
+    desc1:
+      "Engineered a worklog application, enhancing company-wide productivity and streamlining task management processes.",
     desc2:
-      "Implemented Login Authentication, CRUD functionality, and a user-friendly interface designed with Tailwind.",
+      "Integrated Login Authentication, CRUD functionality, and designed an intuitive UI using Tailwind CSS, elevating overall UX and data security.",
     desc3:
-      "Utilized Svelte as Front-end, Flask as Back-end, and MySQL for database.",
+      "Implemented a Full-Stack system with Svelte for the Front-End, Flask for the Back-End, and MySQL for database management, optimizing application performance and scalability.",
   },
 ];
