@@ -45,7 +45,7 @@ export default function PersonalInfo({ activeSection }: PersonalInfoProps) {
 
           <div className="flex flex-row items-center">
             <p className="text-[16px] mb-3 -ml-[8.5px]">
-              📍San Bernardino, California
+              📍La Quinta, California
             </p>
             <img src={usa} className="w-5 h-3 ml-[7px] mb-2" alt="USA flag" />
           </div>
