@@ -68,6 +68,18 @@ export const projectsListItems: ProjectsList[] = [
       "Followed constraints: no non-local variables, no arrays, no non-recursive loops.",
   },
   {
+    logo: csusb,
+    title: "3 Search Algorithm",
+    location: "California State University, San Bernardino",
+    time: "Fall 2023",
+    repoPage: "https://github.com/shunakiya/three-algorithms",
+    desc1: "Implemented graph search algorithms (DFS, BFS, A* Search) in Java.",
+    desc2:
+      "Utilized object-oriented programming concepts like abstract classes, interfaces, and inheritance.",
+    desc3:
+      "Solved pathfinding problems using Maze and Sliding Puzzle as examples.",
+  },
+  {
     logo: pdhs,
     title: "Summer Camp Mentor",
     location: "Palm Desert, California",
