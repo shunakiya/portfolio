@@ -4,7 +4,7 @@ import { ProjectsList, projectsListItems } from "../utils/ProjectsList";
 export default function Projects() {
   return (
     <div className="overflow-hidden">
-      <h1 className="text-2xl font-semibold mb-1.5">Projects</h1>
+      <h1 className="text-2xl font-semibold mb-1.5">Relevant Projects</h1>
 
       <div className="space-y-6">
         {/* rewrite so that it talks about my persective and the challenges i faced, since right

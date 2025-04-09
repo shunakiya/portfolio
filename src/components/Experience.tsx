@@ -3,7 +3,7 @@ import { ExperienceList, experienceListItems } from "../utils/ExperienceList";
 export default function Experience() {
   return (
     <div className="mb-4">
-      <h1 className="text-2xl font-semibold mb-1.5">Experience</h1>
+      <h1 className="text-2xl font-semibold mb-1.5">Professional Experience</h1>
 
       <div className="space-y-6">
         {experienceListItems.map((item: ExperienceList, index: number) => (

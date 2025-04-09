@@ -2,7 +2,6 @@ import csusb from "../assets/logos/csusb.png";
 import ponder from "../assets/logos/ponder.png";
 import open from "../assets/logos/open.png";
 import cse4500 from "../assets/logos/cse4500.png";
-import pdhs from "../assets/logos/pdhs.png";
 
 export interface ProjectsList {
   logo: string;
@@ -57,18 +56,6 @@ export const projectsListItems: ProjectsList[] = [
   },
   {
     logo: csusb,
-    title: "Tail Recursion",
-    location: "California State University, San Bernardino",
-    time: "Fall 2023",
-    repoPage: "https://github.com/shunakiya/tail-recursion-project",
-    desc1:
-      "Implemented 12 tail-recursive functions that handle common Java operations.",
-    desc2: "Optimized for time complexity (aimed for O(n) or better).",
-    desc3:
-      "Followed constraints: no non-local variables, no arrays, no non-recursive loops.",
-  },
-  {
-    logo: csusb,
     title: "3 Search Algorithm",
     location: "California State University, San Bernardino",
     time: "Fall 2023",
@@ -78,18 +65,5 @@ export const projectsListItems: ProjectsList[] = [
       "Utilized object-oriented programming concepts like abstract classes, interfaces, and inheritance.",
     desc3:
       "Solved pathfinding problems using Maze and Sliding Puzzle as examples.",
-  },
-  {
-    logo: pdhs,
-    title: "Summer Camp Mentor",
-    location: "Palm Desert, California",
-    time: "June - July 2018",
-    repoPage: "/",
-    desc1:
-      "Instructed elementary school students in programming and robotics fundamentals, promoting technological literacy and problem-solving skills at an entry-level.",
-    desc2:
-      "Facilitated engaging and interactive learning experiences, utilizing effective communication to maintain student interest and promote active participation in STEM activities.",
-    desc3:
-      "Coordinated and implemented small-scale educational events, enhancing students' understanding of robotics through hands-on demonstrations and collaborative projects.",
   },
 ];
