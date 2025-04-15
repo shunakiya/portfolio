@@ -7,8 +7,6 @@ export default function Projects() {
       <h1 className="text-2xl font-semibold mb-1.5">Relevant Projects</h1>
 
       <div className="space-y-6">
-        {/* rewrite so that it talks about my persective and the challenges i faced, since right
-        now it just looks very generic and talks about what the outcome was. do that for project 2 and 3 */}
         {projectsListItems.map((item: ProjectsList, index: number) => (
           <div key={index} className="border-l-2 border-slate-400 pb-1">
             <div className="ml-4">

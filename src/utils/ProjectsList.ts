@@ -1,7 +1,6 @@
 import csusb from "../assets/logos/csusb.png";
 import ponder from "../assets/logos/ponder.png";
 import open from "../assets/logos/open.png";
-import cse4500 from "../assets/logos/cse4500.png";
 
 export interface ProjectsList {
   logo: string;
@@ -40,19 +39,6 @@ export const projectsListItems: ProjectsList[] = [
       "Connected Merriam-Webster, GNews APIs and Cheerio to deliver accurate definitions, examples, and efficient web scraping, providing comprehensive content.",
     desc3:
       "Constructed using Next.js, TypeScript, and Tailwind CSS; future iterations aim for scalability with potential MongoDB integration to enhance data management.",
-  },
-  {
-    logo: cse4500,
-    title: "Pokédex App",
-    location: "California State University, San Bernardino",
-    time: "Spring 2025",
-    repoPage: "https://github.com/shunakiya/cse4500_hw2",
-    desc1:
-      "Built a Pokedex web app using HTML, CSS, and JavaScript to fetch and display Pokémon data from the RESTful Pokémon API.",
-    desc2:
-      "Created region-specific Pokedexes (Kanto, Johto, Hoenn) with custom gradients, type-based color coding, and scalable API integration.",
-    desc3:
-      "Designed responsive layouts with flexbox and added custom Pokéball icons for enhanced UI.",
   },
   {
     logo: csusb,
