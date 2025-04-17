@@ -46,10 +46,11 @@ export const projectsListItems: ProjectsList[] = [
     location: "California State University, San Bernardino",
     time: "Fall 2023",
     repoPage: "https://github.com/shunakiya/three-algorithms",
-    desc1: "Implemented graph search algorithms (DFS, BFS, A* Search) in Java.",
+    desc1: 
+      "Designed graph search algorithms (DFS, BFS, A* Search) in Java to enable efficient traversal and pathfinding solutions.",
     desc2:
-      "Utilized object-oriented programming concepts like abstract classes, interfaces, and inheritance.",
+      "Applied object-oriented programming principles like abstract classes, interfaces, and inheritance to structure scalable and modular code architecture.",
     desc3:
-      "Solved pathfinding problems using Maze and Sliding Puzzle as examples.",
+      "Developed pathfinding solutions for Maze and Sliding Puzzle environments to demonstrate practical applications of search algorithms in problem-solving.",
   },
 ];
