@@ -1,5 +1,5 @@
 import { FaReact } from "react-icons/fa";
-import { SiTypescript, SiMysql, SiFlask } from "react-icons/si";
+import { SiTypescript, SiFlask } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiNextdotjs } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
@@ -89,20 +89,6 @@ export default function Skills() {
           <div className="flex flex-col mx-2 ml-2.5">
             <p className="text-base mb-0.5 text-[#a4b4cb] transition-colors duration-150 ease-in-out group-hover:text-[#e6f0ff]">
               MongoDB
-            </p>
-            <p className="text-[11px] lg:text-[10px] md:text-[10px] sm:text-[11px] text-slate-500 transition-colors duration-150 ease-in-out group-hover:text-[#a4b4cb]">
-              Database System
-            </p>
-          </div>
-        </div>
-
-        <div className="group flex flex-row items-center bg-slate-800 p-2 rounded-lg px-3 w-[168px] lg:w-52 md:w-52 sm:w-52 py-2.5 border border-transparent transition-all duration-150 ease-in-out hover:border-slate-600 hover:bg-[#252f3e]">
-          <div className="bg-[#E48E0030] w-11 h-11 justify-center flex items-center rounded-lg">
-            <SiMysql size={28} className="fill-[#E48E00]" />
-          </div>
-          <div className="flex flex-col mx-2 ml-2.5">
-            <p className="text-base mb-0.5 text-[#a4b4cb] transition-colors duration-150 ease-in-out group-hover:text-[#e6f0ff]">
-              MySQL
             </p>
             <p className="text-[11px] lg:text-[10px] md:text-[10px] sm:text-[11px] text-slate-500 transition-colors duration-150 ease-in-out group-hover:text-[#a4b4cb]">
               Database System
