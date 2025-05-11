@@ -4,8 +4,8 @@ export default function About() {
       <h1 className="text-2xl font-semibold mb-0.5">About</h1>
       <div className="space-y-4 text-[#a4b4cb]">
         <p>
-          I’m a 22-year-old Full-Stack Developer and student who enjoys learning and
-          building high-quality applications. I started programming young in{" "}
+          I’m a new grad who enjoys learning and building high-quality 
+          applications. I started programming young in{" "}
           <a
             href="https://www.kipr.org/"
             target="blank"
@@ -32,7 +32,7 @@ export default function About() {
           >
             building computers
           </a>
-          , cooking and baking, building and modding{" "}
+          , 
           <a
             href="https://iv-works.com/av4/"
             target="_blank"
