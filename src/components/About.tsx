@@ -32,7 +32,7 @@ export default function About() {
           >
             building computers
           </a>
-          , 
+          ,{" "}
           <a
             href="https://iv-works.com/av4/"
             target="_blank"
