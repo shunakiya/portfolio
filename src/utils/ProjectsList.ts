@@ -18,7 +18,7 @@ export const projectsListItems: ProjectsList[] = [
     logo: open,
     title: "Secure Access Locking Sytem with NFC and Biometrics",
     location: "California State University, San Bernardino",
-    time: "Fall 2024 - Present",
+    time: "Fall 2024 - Spring 2025",
     repoPage: "https://un-lock.vercel.app",
     desc1:
       "Deployed a user-friendly web app using Next.js, Typescript, and Tailwind CSS that interfaces with a Raspberry Pi to control a smart lock.",
