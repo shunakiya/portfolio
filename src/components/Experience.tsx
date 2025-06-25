@@ -4,7 +4,6 @@ export default function Experience() {
   return (
     <div className="mb-4">
       <h1 className="text-2xl font-semibold mb-1.5">Professional Experience</h1>
-
       <div className="space-y-6">
         {experienceListItems.map((item: ExperienceList, index: number) => (
           <div key={index}>
@@ -24,18 +23,14 @@ export default function Experience() {
                   </div>
                 </div>
                 <div className="list-inside space-y-1 text-[#a4b4cb]">
-                  <li className="flex gap-2">
-                    <p>•</p>
-                    <p>{item.desc1}</p>
-                  </li>
-                  <li className="flex gap-2">
-                    <p>•</p>
-                    <p>{item.desc2}</p>
-                  </li>
-                  <li className="flex gap-2">
-                    <p>•</p>
-                    <p>{item.desc3}</p>
-                  </li>
+                  {[item.desc1, item.desc2, item.desc3]
+                    .filter((desc) => desc && desc.trim() !== "")
+                    .map((desc, idx) => (
+                      <li key={idx} className="flex gap-2">
+                        <p>•</p>
+                        <p>{desc}</p>
+                      </li>
+                    ))}
                 </div>
               </div>
             </div>
