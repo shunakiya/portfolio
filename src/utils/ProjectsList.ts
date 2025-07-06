@@ -19,7 +19,7 @@ export const projectsListItems: ProjectsList[] = [
     title: "Waypoint | AI Itinerary Planner",
     location: "La Quinta, California",
     time: "Jun 2025 - Present",
-    repoPage: "https://waypoint-ai.vercel.app",
+    repoPage: "https://waypoint-ai.app",
     desc1:
       "Spearheading an AI-powered travel automation tool using Next.js, TypeScript, Tailwind, Supabase, Stripe, Perplexity API, and Google API to automatically generate and schedule personalized trip itineraries.",
     desc2:
