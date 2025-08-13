@@ -37,7 +37,7 @@ export default function PersonalInfo({ activeSection }: PersonalInfoProps) {
         <div className="mt-2">
           <p className="text-xl  mb-2">
             <span className="animate-text-gradient bg-gradient-to-r from-purple-400 via-pink-500 to-blue-400 bg-[200%_auto] bg-clip-text text-transparent mr-1">
-              Full-Stack
+              Front-End
             </span>
             {""}
             Developer
@@ -51,8 +51,8 @@ export default function PersonalInfo({ activeSection }: PersonalInfoProps) {
           </div>
 
           <p className="text-[15px] w-[335px] text-slate-400">
-            I build responsive, user-friendly applications across front and back
-            end.
+            I build responsive, user-friendly <br />
+            web applications
           </p>
         </div>
       </div>
