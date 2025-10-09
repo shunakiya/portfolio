@@ -1,6 +1,7 @@
 import lsa from "../assets/logos/lsa.png";
 import autumn_valley from "../assets/logos/akiya.png";
 import pdhs from "../assets/logos/pdhs.png";
+import mermory from "../assets/logos/mermory.png";
 
 export interface ExperienceList {
   logo: string;
@@ -8,24 +9,25 @@ export interface ExperienceList {
   company: string;
   location: string;
   time: string;
-  desc1: string;
-  desc2: string;
-  desc3: string;
+  desc: string;
 }
 
 export const experienceListItems: ExperienceList[] = [
   {
+    logo: mermory,
+    position: "Front-End Developer Intern",
+    company: "mermory",
+    location: "Remote · Internship",
+    time: "July 2025 - Present",
+    desc: "Facilitated the landing page by implementing custom animations with Motion and Tailwind, refining UI/UX through targeted styling updates, and building a custom component library for the company.",
+  },
+  {
     logo: autumn_valley,
-    position: "Full-Stack Engineer",
+    position: "Front-End Developer",
     company: "Autumn Valley International, Inc.",
     location: "La Quinta, California · Part-time",
-    time: "December 2024 - January 2025",
-    desc1:
-      "Produced a user-centric company website during a part-time winter break contract, prioritizing engagement and interactive features using Next.js, TypeScript, and Tailwind.",
-    desc2:
-      "Embedded EmailJS and i18next, expanding global accessibility through streamlined email and multilingual functionality.",
-    desc3:
-      "Incorporated a dynamic globe feature to visually display all exported locations, enhancing website interactivity",
+    time: "December 2024 - February 2025",
+    desc: "Designed and developed a user-centric website using Next.js, TypeScript, and Tailwind during a winter contract. Integrated multilingual support and interactivity to improve engagement and global accessibility.",
   },
   {
     logo: lsa,
@@ -33,12 +35,7 @@ export const experienceListItems: ExperienceList[] = [
     company: "LOGISTEED Solutions America, Ltd.",
     location: "Torrance, California · On-site",
     time: "June - August 2024",
-    desc1:
-      "Developed a Full-Stack worklog application using Svelte, Flask, and MySQL for database management, enhancing company-wide productivity and streamlining task management processes.",
-    desc2:
-      "Integrated Login Authentication, CRUD functionality, and an intuitive UI using Tailwind, elevating UX and data security.",
-    desc3:
-      "Optimized application performance and scalability through effective system design and implementation, resulting in faster load times and the ability to handle increased user traffic.",
+    desc: "Built a full-stack worklog application with Svelte, Flask, and MySQL to streamline task management and improve team productivity. Focused on clean UI, secure authentication, and optimized performance.",
   },
   {
     logo: pdhs,
@@ -46,9 +43,6 @@ export const experienceListItems: ExperienceList[] = [
     company: "Palm Desert Hight School STEM Program",
     time: "June - July 2018",
     location: "Palm Desert, California · On-site",
-    desc1:
-      "Instructed elementary and middle school students in programming and robotics by leading STEM activities that foster technological literacy, improve problem-solving skills, and encourage active participation through clear instruction and guided leadership.",
-    desc2: "",
-    desc3: "",
+    desc: "Led programming and robotics sessions for elementary and middle school students as a STEM teaching assistant. Helped boost student engagement and foster interest in technology through hands-on learning.",
   },
 ];

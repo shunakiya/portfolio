@@ -23,7 +23,7 @@ export default function Experience() {
                   </div>
                 </div>
                 <div className="list-inside space-y-1 text-[#a4b4cb]">
-                  {[item.desc1, item.desc2, item.desc3]
+                  {[item.desc]
                     .filter((desc) => desc && desc.trim() !== "")
                     .map((desc, idx) => (
                       <li key={idx} className="flex gap-2">

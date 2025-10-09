@@ -8,9 +8,7 @@ export interface ProjectsList {
   location: string;
   time: string;
   repoPage: string;
-  desc1: string;
-  desc2: string;
-  desc3: string;
+  desc: string;
 }
 
 export const projectsListItems: ProjectsList[] = [
@@ -20,12 +18,7 @@ export const projectsListItems: ProjectsList[] = [
     location: "La Quinta, California",
     time: "Jun 2025 - Present",
     repoPage: "https://waypoint-ai.app",
-    desc1:
-      "Spearheading an AI-powered travel automation tool using Next.js, TypeScript, Tailwind, Supabase, Stripe, Perplexity API, and Google API to automatically generate and schedule personalized trip itineraries.",
-    desc2:
-      "Architecting secure user authentication and data management with Supabase and Google Sign-In, while integrating Stripe for seamless payment processing and Perplexity API for real-time research on destinations, hours, prices, and local insights",
-    desc3:
-      "Automating the creation of calendar agenda directly on users’ Google Calendars, intelligently factoring in budget, downtime, crowds, proximity, and must-see prioritization to deliver stress-free, optimized travel experiences.",
+    desc: " Spearheading an AI travel automation tool with Next.js, TypeScript, Tailwind, Supabase, and Stripe that generates personalized itineraries using Perplexity and Google APIs, automatically scheduling optimized trips to users' Google Calendars.",
   },
   {
     logo: open,
@@ -33,12 +26,7 @@ export const projectsListItems: ProjectsList[] = [
     location: "California State University, San Bernardino",
     time: "Aug 2024 - May 2025",
     repoPage: "https://un-lock.vercel.app",
-    desc1:
-      "Deployed a user-friendly web app using Next.js, TypeScript, and Tailwind that interfaces with a Raspberry Pi to control a custom-made smart lock, collaborating with a multidisciplinary team using Agile methodologies for iterative development.",
-    desc2:
-      "Engineered the authentication system for the lock using MongoDB to manage user credentials, along with secure RESTful API communication between a front-end and a back-end for fingerprint and NFC access control.",
-    desc3:
-      "Integrated a multi-platform system with a modern web interface using Tailwind CSS, ensuring a seamless and intuitive UX.",
+    desc: "  Deployed a Next.js web app with TypeScript and Tailwind interfacing with Raspberry Pi to control a custom smart lock, engineering MongoDB authentication and secure RESTful APIs for fingerprint/NFC access control.",
   },
   {
     logo: ponder,
@@ -46,11 +34,6 @@ export const projectsListItems: ProjectsList[] = [
     location: "San Bernardino, California",
     time: "Feb 2025 - May 2025",
     repoPage: "https://ponder-it.vercel.app",
-    desc1:
-      "Developed a modern, clean, and user-friendly interface using Next.js, TypeScript, and Tailwind, elevating user experience through intuitive design principles.",
-    desc2:
-      "Connected Merriam-Webster, GNews APIs and Cheerio to deliver accurate definitions, examples, and efficient web scraping, providing comprehensive content.",
-    desc3:
-      "Enhanced usability and accessibility by implementing responsive design and best practices, ensuring the app delivers a seamless experience across devices and for all users.",
+    desc: "Built a modern Next.js app with TypeScript and Tailwind, integrating Merriam-Webster and GNews APIs plus Cheerio for definitions, news, and web scraping with responsive, accessible design.",
   },
 ];

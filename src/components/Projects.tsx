@@ -39,15 +39,7 @@ export default function Projects() {
               <div className="list-inside space-y-1 text-[#a4b4cb]">
                 <li className="flex gap-2">
                   <p>•</p>
-                  <p>{item.desc1}</p>
-                </li>
-                <li className="flex gap-2">
-                  <p>•</p>
-                  <p>{item.desc2}</p>
-                </li>
-                <li className="flex gap-2">
-                  <p>•</p>
-                  <p>{item.desc3}</p>
+                  <p>{item.desc}</p>
                 </li>
               </div>
             </div>

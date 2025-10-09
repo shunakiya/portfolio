@@ -111,7 +111,7 @@ export default function PersonalInfo({ activeSection }: PersonalInfoProps) {
 
           {/* linkedin */}
           <a
-            href="https://linkedin.com/in/shunsuke-akiya/"
+            href="https://linkedin.com/in/sakiya/"
             target="_blank"
             rel="noopener noreferrer"
             title="LinkedIn"

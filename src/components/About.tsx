@@ -4,8 +4,8 @@ export default function About() {
       <h1 className="text-2xl font-semibold mb-0.5">About</h1>
       <div className="space-y-4 text-[#a4b4cb]">
         <p>
-          I’m a new grad who enjoys learning and building high-quality 
-          applications. I started programming young in{" "}
+          I’m a new grad who enjoys learning and building user-friendly web
+          apps. I started programming young in{" "}
           <a
             href="https://www.kipr.org/"
             target="blank"
@@ -13,15 +13,15 @@ export default function About() {
           >
             robotics
           </a>
-          , but a Software Developer internship sparked my path into Full-Stack
-          Development. Since then, I’ve committed to expanding my skills, from
-          TypeScript and full-stack knowledge to algorithms and data structures.
+          , but a software developer internship sparked my path into web
+          development. Since then, I’ve been committed to learning front-end
+          design and animations.
         </p>
         <p>
-          I enjoy working in both design and engineering, aiming for a balance
-          between performance and functionality. Whether building a dynamic
-          frontend interface or coding efficient backend logic, I continue to
-          grow my toolkit and am ready to face new challenges.
+          Right now I'm focused on gaining experience and diving into UI/UX
+          design and smooth animations as a front-end developer. I enjoy keeping
+          up with the latest web dev trends and experimenting with new tools to
+          build better user experiences.
         </p>
         <p>
           Outside of coding, I enjoy playing PC games with my girlfriend,{" "}
