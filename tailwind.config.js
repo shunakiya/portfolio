@@ -4,12 +4,20 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        "text-gradient": "text 3s linear infinite",
+        gradient: "gradient 3.5s linear infinite",
       },
       keyframes: {
         text: {
           to: {
             backgroundPosition: "200% center",
+          },
+        },
+        gradient: {
+          from: {
+            backgroundPosition: "200% center",
+          },
+          to: {
+            backgroundPosition: "0% center",
           },
         },
       },

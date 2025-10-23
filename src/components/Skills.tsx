@@ -2,154 +2,64 @@ import { FaReact } from "react-icons/fa";
 import { FaGitAlt } from "react-icons/fa6";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiJavascript, SiNextdotjs, SiTypescript } from "react-icons/si";
-// import { SkillsList, skillsListItems } from "../utils/SkillsList";
-import figma from "../assets/logos/figma.svg";
-import motion from "../assets/logos/motion.png";
-import python from "../assets/logos/python.svg";
+import { SkillsList, skillsListItems } from "../data/SkillsList";
+
+const iconComponents = {
+  SiNextdotjs,
+  FaReact,
+  SiTypescript,
+  SiJavascript,
+  RiTailwindCssFill,
+  FaGitAlt,
+};
 
 export default function Skills() {
   return (
     <div className="flex flex-col mb-1">
-      <h1 className="text-2xl font-semibold mb-1.5">Skills</h1>
-
-      {/* <>
-        <div>
-          {skillsListItems.map((item: SkillsList, index: number) => (
-            <div key={index}>
-              {item.title}
-              {item.description}
-              {item.color}
-            </div>
-          ))}
-        </div>
-      </> */}
+      <h1 className="text-2xl font-medium mb-1.5">Skills</h1>
 
       <div className="grid grid-cols-2 grid-rows-3 lg:grid-cols-3 lg:grid-rows-2 md:grid-cols-3 md:grid-rows-2 sm:grid-cols-2 sm:grid-rows-3 gap-4">
-        <div className="group flex flex-row items-center bg-slate-800 p-2 rounded-lg px-3 w-[168px] lg:w-52 md:w-52 sm:w-52 py-2.5 border border-transparent transition-all duration-150 ease-in-out hover:border-slate-600 hover:bg-[#252f3e]">
-          <div className="bg-white/10 w-11 h-11 justify-center flex items-center rounded-lg">
-            <SiNextdotjs size={28} className="fill-white/60" />
-          </div>
-          <div className="flex flex-col mx-2 ml-2.5">
-            <p className="text-base mb-0.5 text-[#a4b4cb] transition-colors duration-150 ease-in-out group-hover:text-[#e6f0ff]">
-              Next.js
-            </p>
-            <p className="text-[11px] lg:text-[10px] md:text-[10px] sm:text-[11px] text-slate-500 transition-colors duration-150 ease-in-out group-hover:text-[#a4b4cb]">
-              React Framework
-            </p>
-          </div>
-        </div>
+        {skillsListItems.map((item: SkillsList, index: number) => {
+          const IconComponent = item.iconName
+            ? iconComponents[item.iconName as keyof typeof iconComponents]
+            : null;
 
-        <div className="group flex flex-row items-center bg-slate-800 p-2 rounded-lg px-3 w-[168px] lg:w-52 md:w-52 sm:w-52 py-2.5 border border-transparent transition-all duration-150 ease-in-out hover:border-slate-600 hover:bg-[#252f3e]">
-          <div className="bg-[#58C4DC30] w-11 h-11 justify-center flex items-center rounded-lg">
-            <FaReact size={28} className="fill-[#58C4DC]" />
-          </div>
-          <div className="flex flex-col mx-2 ml-2.5">
-            <p className="text-base mb-0.5 text-[#a4b4cb] transition-colors duration-150 ease-in-out group-hover:text-[#e6f0ff]">
-              React
-            </p>
-            <p className="text-[11px] lg:text-[10px] md:text-[10px] sm:text-[11px] text-slate-500 transition-colors duration-150 ease-in-out group-hover:text-[#a4b4cb]">
-              JavaScript Library
-            </p>
-          </div>
-        </div>
-
-        <div className="group flex flex-row items-center bg-slate-800 p-2 rounded-lg px-3 w-[168px] lg:w-52 md:w-52 sm:w-52 py-2.5 border border-transparent transition-all duration-150 ease-in-out hover:border-slate-600 hover:bg-[#252f3e]">
-          <div className="bg-[#3178C630] w-11 h-11 justify-center flex items-center rounded-lg">
-            <SiTypescript size={26} className="fill-[#3178C6]" />
-          </div>
-          <div className="flex flex-col mx-2 ml-2.5">
-            <p className="text-base mb-0.5 text-[#a4b4cb] transition-colors duration-150 ease-in-out group-hover:text-[#e6f0ff]">
-              Typescript
-            </p>
-            <p className="text-[11px] lg:text-[10px] md:text-[10px] sm:text-[11px] text-slate-500 transition-colors duration-150 ease-in-out group-hover:text-[#a4b4cb]">
-              JavaScript but easier
-            </p>
-          </div>
-        </div>
-
-        <div className="group flex flex-row items-center bg-slate-800 p-2 rounded-lg px-3 w-[168px] lg:w-52 md:w-52 sm:w-52 py-2.5 border border-transparent transition-all duration-150 ease-in-out hover:border-slate-600 hover:bg-[#252f3e]">
-          <div className="bg-[#F7E01830] w-11 h-11 justify-center flex items-center rounded-lg">
-            <SiJavascript size={26} className="fill-[#F7E018]" />
-          </div>
-          <div className="flex flex-col mx-2 ml-2.5">
-            <p className="text-base mb-0.5 text-[#a4b4cb] transition-colors duration-150 ease-in-out group-hover:text-[#e6f0ff]">
-              JavaScript
-            </p>
-            <p className="text-[11px] lg:text-[10px] md:text-[10px] sm:text-[11px] text-slate-500 transition-colors duration-150 ease-in-out group-hover:text-[#a4b4cb]">
-              Programming Language
-            </p>
-          </div>
-        </div>
-
-        <div className="group flex flex-row items-center bg-slate-800 p-2 rounded-lg px-3 w-[168px] lg:w-52 md:w-52 sm:w-52 py-2.5 border border-transparent transition-all duration-150 ease-in-out hover:border-slate-600 hover:bg-[#252f3e]">
-          <div className="bg-[#38BDF830] w-11 h-11 justify-center flex items-center rounded-lg">
-            <RiTailwindCssFill size={28} className="fill-[#38BDF8]" />
-          </div>
-          <div className="flex flex-col mx-2 ml-2.5">
-            <p className="text-base mb-0.5 text-[#a4b4cb] transition-colors duration-150 ease-in-out group-hover:text-[#e6f0ff]">
-              Tailwind CSS
-            </p>
-            <p className="text-[11px] lg:text-[10px] md:text-[10px] sm:text-[11px] text-slate-500 transition-colors duration-150 ease-in-out group-hover:text-[#a4b4cb]">
-              CSS Framework
-            </p>
-          </div>
-        </div>
-
-        <div className="group flex flex-row items-center bg-slate-800 p-2 rounded-lg px-3 w-[168px] lg:w-52 md:w-52 sm:w-52 py-2.5 border border-transparent transition-all duration-150 ease-in-out hover:border-slate-600 hover:bg-[#252f3e]">
-          <div className="bg-[#FFF31230] w-11 h-11 justify-center flex items-center rounded-lg">
-            <img src={motion} className="h-6 w-6" />
-          </div>
-          <div className="flex flex-col mx-2 ml-2.5">
-            <p className="text-base mb-0.5 text-[#a4b4cb] transition-colors duration-150 ease-in-out group-hover:text-[#e6f0ff]">
-              Motion.dev
-            </p>
-            <p className="text-[11px] lg:text-[10px] md:text-[10px] sm:text-[11px] text-slate-500 transition-colors duration-150 ease-in-out group-hover:text-[#a4b4cb]">
-              Animation Library
-            </p>
-          </div>
-        </div>
-
-        <div className="group flex flex-row items-center bg-slate-800 p-2 rounded-lg px-3 w-[168px] lg:w-52 md:w-52 sm:w-52 py-2.5 border border-transparent transition-all duration-150 ease-in-out hover:border-slate-600 hover:bg-[#252f3e]">
-          <div className="bg-[#8B879A30] w-11 h-11 justify-center flex items-center rounded-lg">
-            <img src={figma} className="h-9 w-9" />
-          </div>
-          <div className="flex flex-col mx-2 ml-2.5">
-            <p className="text-base mb-0.5 text-[#a4b4cb] transition-colors duration-150 ease-in-out group-hover:text-[#e6f0ff]">
-              Figma
-            </p>
-            <p className="text-[11px] lg:text-[10px] md:text-[10px] sm:text-[11px] text-slate-500 transition-colors duration-150 ease-in-out group-hover:text-[#a4b4cb]">
-              Design Tool
-            </p>
-          </div>
-        </div>
-
-        <div className="group flex flex-row items-center bg-slate-800 p-2 rounded-lg px-3 w-[168px] lg:w-52 md:w-52 sm:w-52 py-2.5 border border-transparent transition-all duration-150 ease-in-out hover:border-slate-600 hover:bg-[#252f3e]">
-          <div className="bg-[#FFD24130] w-11 h-11 justify-center flex items-center rounded-lg">
-            <img src={python} className="h-8 w-8" />
-          </div>
-          <div className="flex flex-col mx-2 ml-2.5">
-            <p className="text-base mb-0.5 text-[#a4b4cb] transition-colors duration-150 ease-in-out group-hover:text-[#e6f0ff]">
-              Python
-            </p>
-            <p className="text-[11px] lg:text-[10px] md:text-[10px] sm:text-[11px] text-slate-500 transition-colors duration-150 ease-in-out group-hover:text-[#a4b4cb]">
-              Programming Language
-            </p>
-          </div>
-        </div>
-
-        <div className="group flex flex-row items-center bg-slate-800 p-2 rounded-lg px-3 w-[168px] lg:w-52 md:w-52 sm:w-52 py-2.5 border border-transparent transition-all duration-150 ease-in-out hover:border-slate-600 hover:bg-[#252f3e]">
-          <div className="bg-[#F0513330] w-11 h-11 justify-center flex items-center rounded-lg">
-            <FaGitAlt size={28} className="fill-[#F05133]" />
-          </div>
-          <div className="flex flex-col mx-2 ml-2.5">
-            <p className="text-base mb-0.5 text-[#a4b4cb] transition-colors duration-150 ease-in-out group-hover:text-[#e6f0ff]">
-              Git
-            </p>
-            <p className="text-[11px] lg:text-[10px] md:text-[10px] sm:text-[11px] text-slate-500 transition-colors duration-150 ease-in-out group-hover:text-[#a4b4cb]">
-              Control System
-            </p>
-          </div>
-        </div>
+          return (
+            <div
+              key={index}
+              className="flex flex-row items-center bg-slate-800 p-2 rounded-lg px-3 w-[168px] lg:w-52 md:w-52 sm:w-52 py-2.5 shadow-sm"
+            >
+              <div
+                className={`${item.bgColor} w-11 h-11 justify-center flex items-center rounded-lg`}
+              >
+                {item.iconType === "component" && IconComponent ? (
+                  <IconComponent
+                    size={item.iconSize}
+                    className={item.iconColor}
+                  />
+                ) : (
+                  <img
+                    src={item.imageSrc}
+                    className={
+                      item.iconSize === 24
+                        ? "h-6 w-6"
+                        : item.iconSize === 32
+                        ? "h-8 w-8"
+                        : "h-9 w-9"
+                    }
+                    alt={`${item.title} logo`}
+                  />
+                )}
+              </div>
+              <div className="flex flex-col mx-2 ml-2.5">
+                <p className="text-base mb-0.5 text-slate-200">{item.title}</p>
+                <p className="text-[11px] lg:text-[10px] md:text-[10px] sm:text-[11px] text-slate-400">
+                  {item.description}
+                </p>
+              </div>
+            </div>
+          );
+        })}
       </div>
     </div>
   );

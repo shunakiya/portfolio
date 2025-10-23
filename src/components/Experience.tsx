@@ -1,9 +1,9 @@
-import { ExperienceList, experienceListItems } from "../utils/ExperienceList";
+import { ExperienceList, experienceListItems } from "../data/ExperienceList";
 
 export default function Experience() {
   return (
     <div className="mb-4">
-      <h1 className="text-2xl font-semibold mb-1.5">Professional Experience</h1>
+      <h1 className="text-2xl font-medium mb-1.5">Professional Experience</h1>
       <div className="space-y-6">
         {experienceListItems.map((item: ExperienceList, index: number) => (
           <div key={index}>
@@ -16,19 +16,18 @@ export default function Experience() {
                     alt={`${item.company} logo`}
                   />
                   <div className="flex flex-col">
-                    <h1 className="text-xl font-semibold">{item.position}</h1>
-                    <p className="text-base font-medium">{item.company}</p>
-                    <p className="text-base font-medium">{item.location}</p>
-                    <p className="text-slate-500 text-sm">{item.time}</p>
+                    <h1 className="text-xl font-medium">{item.position}</h1>
+                    <p className="text-base text-slate-300">{item.company}</p>
+                    <p className="text-sm text-slate-400">{item.location}</p>
+                    <p className="text-sm text-slate-500">{item.time}</p>
                   </div>
                 </div>
-                <div className="list-inside space-y-1 text-[#a4b4cb]">
+                <div className="list-inside space-y-1 text-slate-400">
                   {[item.desc]
                     .filter((desc) => desc && desc.trim() !== "")
                     .map((desc, idx) => (
                       <li key={idx} className="flex gap-2">
-                        <p>•</p>
-                        <p>{desc}</p>
+                        <p className="ml-1">{desc}</p>
                       </li>
                     ))}
                 </div>

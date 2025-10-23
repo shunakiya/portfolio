@@ -1,7 +1,3 @@
-import lsa from "../assets/logos/lsa.png";
-import autumn_valley from "../assets/logos/akiya.png";
-import pdhs from "../assets/logos/pdhs.png";
-import mermory from "../assets/logos/mermory.png";
 
 export interface ExperienceList {
   logo: string;
@@ -14,7 +10,7 @@ export interface ExperienceList {
 
 export const experienceListItems: ExperienceList[] = [
   {
-    logo: mermory,
+    logo: "/assets/logos/mermory.png",
     position: "Front-End Developer Intern",
     company: "mermory",
     location: "Remote · Internship",
@@ -22,7 +18,7 @@ export const experienceListItems: ExperienceList[] = [
     desc: "Facilitated the landing page by implementing custom animations with Motion and Tailwind, refining UI/UX through targeted styling updates, and building a custom component library for the company.",
   },
   {
-    logo: autumn_valley,
+    logo: "/assets/logos/akiya.png",
     position: "Front-End Developer",
     company: "Autumn Valley International, Inc.",
     location: "La Quinta, California · Part-time",
@@ -30,7 +26,7 @@ export const experienceListItems: ExperienceList[] = [
     desc: "Designed and developed a user-centric website using Next.js, TypeScript, and Tailwind during a winter contract. Integrated multilingual support and interactivity to improve engagement and global accessibility.",
   },
   {
-    logo: lsa,
+    logo: "/assets/logos/lsa.png",
     position: "Software Developer Intern",
     company: "LOGISTEED Solutions America, Ltd.",
     location: "Torrance, California · On-site",
@@ -38,7 +34,7 @@ export const experienceListItems: ExperienceList[] = [
     desc: "Built a full-stack worklog application with Svelte, Flask, and MySQL to streamline task management and improve team productivity. Focused on clean UI, secure authentication, and optimized performance.",
   },
   {
-    logo: pdhs,
+    logo: "/assets/logos/pdhs.png",
     position: "STEM Program Teaching Assistant",
     company: "Palm Desert Hight School STEM Program",
     time: "June - July 2018",

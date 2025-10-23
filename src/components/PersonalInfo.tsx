@@ -1,8 +1,7 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { IoIosMail, IoIosArrowUp } from "react-icons/io";
 import { IoDocumentText } from "react-icons/io5";
-import pfp from "../assets/pfp.png";
-import usa from "../assets/usa.svg";
+import pfp from "/assets/pfp.png";
 
 interface PersonalInfoProps {
   activeSection: string;
@@ -31,12 +30,14 @@ export default function PersonalInfo({ activeSection }: PersonalInfoProps) {
       <div className="flex flex-col">
         <div>
           <img src={pfp} className="w-36 h-36 rounded-full mb-2" />
-          <h1 className="text-4xl font-bold">Shunsuke Akiya</h1>
+          <h1 className="text-3xl font-medium whitespace-nowrap">
+            Shunsuke Akiya
+          </h1>
         </div>
 
         <div className="mt-2">
-          <p className="text-xl  mb-2">
-            <span className="animate-text-gradient bg-gradient-to-r from-purple-400 via-pink-500 to-blue-400 bg-[200%_auto] bg-clip-text text-transparent mr-1">
+          <p className="text-lg mb-2">
+            <span className="bg-clip-text text-transparent bg-[linear-gradient(to_right,theme(colors.purple.300),theme(colors.pink.400),theme(colors.blue.300),theme(colors.pink.400),theme(colors.purple.300))] bg-[length:200%_auto] animate-gradient mr-1">
               Front-End
             </span>
             {""}
@@ -44,13 +45,10 @@ export default function PersonalInfo({ activeSection }: PersonalInfoProps) {
           </p>
 
           <div className="flex flex-row items-center">
-            <p className="text-[16px] mb-3 -ml-[8.5px]">
-              📍La Quinta, California
-            </p>
-            <img src={usa} className="w-5 h-3 ml-[7px] mb-2" alt="USA flag" />
+            <p className="text-base mb-3 -ml-2">📍La Quinta, California</p>
           </div>
 
-          <p className="text-[15px] w-[335px] text-slate-400">
+          <p className="text-sm w-80 text-slate-400">
             I build responsive, user-friendly <br />
             web applications
           </p>
@@ -69,7 +67,7 @@ export default function PersonalInfo({ activeSection }: PersonalInfoProps) {
               }`}
             >
               <IoIosArrowUp
-                className={`transition-transform duration-300 ease-in-out mt-0.5 transform
+                className={`transition-transform duration-150 ease-in-out mt-0.5 transform
                 ${activeSection === section ? "rotate-90" : ""}
                 group-hover:rotate-90 group-hover:fill-white`}
               />
@@ -83,17 +81,14 @@ export default function PersonalInfo({ activeSection }: PersonalInfoProps) {
 
       {/* socials */}
       <div className="flex items-center bottom-0 text-slate-400 sm:mt-5 sm:-ml-0.5">
-        <div className="flex space-x-8 items-center">
+        <div className="flex gap-6 items-center">
           {/* resume */}
           <button
             onClick={openResume}
-            className="hover:transition hover:ease-in-out duration-100 hover:text-[#e6f0ff]"
+            className="hover:transition hover:ease-in-out duration-150 hover:text-[#e6f0ff]"
             title="Resume"
           >
-            <div className="flex flex-row border-2 duration-100 border-slate-400 hover:border-[#e6f0ff] rounded-xl p-2 gap-2">
-              <p className="">Resume </p>
-              <IoDocumentText size={25} />
-            </div>
+            <IoDocumentText size={25} />
           </button>
 
           {/* github */}
@@ -105,7 +100,7 @@ export default function PersonalInfo({ activeSection }: PersonalInfoProps) {
           >
             <FaGithub
               size={25}
-              className="hover:transition hover:ease-in-out duration-100 hover:fill-[#e6f0ff]"
+              className="hover:transition hover:ease-in-out duration-150 hover:fill-[#e6f0ff]"
             />
           </a>
 
@@ -118,7 +113,7 @@ export default function PersonalInfo({ activeSection }: PersonalInfoProps) {
           >
             <FaLinkedin
               size={25}
-              className="hover:transition hover:ease-in-out duration-100
+              className="hover:transition hover:ease-in-out duration-150
               hover:fill-[#e6f0ff]"
             />
           </a>
@@ -127,7 +122,7 @@ export default function PersonalInfo({ activeSection }: PersonalInfoProps) {
           <button onClick={writeEmail} title="Send Email">
             <IoIosMail
               size={33}
-              className="hover:transition hover:ease-in-out duration-100 hover:fill-[#e6f0ff]"
+              className="hover:transition hover:ease-in-out duration-150 hover:fill-[#e6f0ff]"
             />
           </button>
         </div>

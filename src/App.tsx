@@ -5,7 +5,7 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
-import cursor from "./assets/cursor.png";
+import cursor from "/assets/cursor.png";
 
 export default function App() {
   const [showLeft, setShowLeft] = useState(false);

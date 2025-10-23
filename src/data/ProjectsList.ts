@@ -1,7 +1,3 @@
-import ponder from "../assets/logos/ponder.png";
-import open from "../assets/logos/open.png";
-import waypoint from "../assets/logos/waypoint.png";
-
 export interface ProjectsList {
   logo: string;
   title: string;
@@ -13,7 +9,7 @@ export interface ProjectsList {
 
 export const projectsListItems: ProjectsList[] = [
   {
-    logo: waypoint,
+    logo: "/assets/logos/waypoint.png",
     title: "Waypoint | AI Itinerary Planner",
     location: "La Quinta, California",
     time: "Jun 2025 - Present",
@@ -21,15 +17,15 @@ export const projectsListItems: ProjectsList[] = [
     desc: " Spearheading an AI travel automation tool with Next.js, TypeScript, Tailwind, Supabase, and Stripe that generates personalized itineraries using Perplexity and Google APIs, automatically scheduling optimized trips to users' Google Calendars.",
   },
   {
-    logo: open,
-    title: "Secure Access Locking Sytem with NFC and Biometrics",
+    logo: "/assets/logos/open.png",
+    title: "Secure Access Locking Sytem with NFC & Biometrics",
     location: "California State University, San Bernardino",
     time: "Aug 2024 - May 2025",
     repoPage: "https://un-lock.vercel.app",
     desc: "  Deployed a Next.js web app with TypeScript and Tailwind interfacing with Raspberry Pi to control a custom smart lock, engineering MongoDB authentication and secure RESTful APIs for fingerprint/NFC access control.",
   },
   {
-    logo: ponder,
+    logo: "/assets/logos/ponder.png",
     title: "Ponder",
     location: "San Bernardino, California",
     time: "Feb 2025 - May 2025",
