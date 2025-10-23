@@ -37,11 +37,11 @@ export default function PersonalInfo({ activeSection }: PersonalInfoProps) {
 
         <div className="mt-2">
           <p className="text-lg mb-2">
-            <span className="bg-clip-text text-transparent bg-[linear-gradient(to_right,theme(colors.purple.300),theme(colors.pink.400),theme(colors.blue.300),theme(colors.pink.400),theme(colors.purple.300))] bg-[length:200%_auto] animate-gradient mr-1">
+            <span className="bg-clip-text text-transparent bg-[linear-gradient(to_right,theme(colors.purple.300),theme(colors.pink.300),theme(colors.blue.300),theme(colors.pink.300),theme(colors.purple.300))] bg-[length:200%_auto] animate-gradient mr-1">
               Front-End
             </span>
             {""}
-            Developer
+            Engineer
           </p>
 
           <div className="flex flex-row items-center">
