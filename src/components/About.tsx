@@ -18,8 +18,8 @@ export default function About() {
           design and animations.
         </p>
         <p>
-          Right now I'm focused on gaining experience and diving into UI/UX
-          design and smooth animations as a front-end developer. I enjoy keeping
+          I'm currently focused on gaining experience and studying UI/UX
+          princpals, along with smooth animations. I enjoy keeping
           up with the latest web dev trends and experimenting with new tools to
           build better user experiences.
         </p>
