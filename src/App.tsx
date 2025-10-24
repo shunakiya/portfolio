@@ -6,23 +6,12 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
+import ScrollReveal from "./components/ScrollReveal";
 import cursor from "/assets/cursor.png";
 
 export default function App() {
-  const [showLeft, setShowLeft] = useState(false);
-  const [showRight, setShowRight] = useState(false);
   const [activeSection, setActiveSection] = useState<string>("about");
   const [newMouseCoordinate, setCoord] = useState<[number, number]>([0, 0]);
-
-  useEffect(() => {
-    const firstTimer = setTimeout(() => setShowLeft(true), 150);
-    const secondTimer = setTimeout(() => setShowRight(true), 255);
-
-    return () => {
-      clearTimeout(firstTimer);
-      clearTimeout(secondTimer);
-    };
-  }, []);
 
   useEffect(() => {
     const handleGlobalMovement = (e: MouseEvent) => {
@@ -77,63 +66,35 @@ export default function App() {
       <div className="flex flex-col lg:flex-row gap-8 lg:gap-40 mx-auto min-h-screen max-w-screen-xl px-5 py-8 md:px-12 md:py-20 lg:px-24 lg:py-0">
         <div className="w-full lg:w-1/4 lg:sticky lg:top-0 lg:h-screen sm:h-fit">
           <div className="lg:sticky lg:top-24">
-            <div
-              className={`transition-all ease-out duration-[800ms] ${
-                showLeft
-                  ? "opacity-100 translate-x-0"
-                  : "opacity-0 -translate-x-16"
-              }`}
-            >
-              <PersonalInfo activeSection={activeSection} />
-            </div>
+            <PersonalInfo activeSection={activeSection} />
           </div>
         </div>
 
-        <div className="py-0 lg:py-20 flex flex-col w-full lg:w-3/4">
+        <div className="py-0 lg:py-20 flex flex-col w-full lg:w-3/4 will-change-transform">
           <div className="space-y-8 lg:space-y-12 md:space-y-12">
-            <div
-              id="about"
-              className={`transition-all ease-out duration-1000 ${
-                showRight
-                  ? "opacity-100 translate-y-0"
-                  : "opacity-0 translate-y-16"
-              }`}
-            >
-              <About />
-            </div>
+            <ScrollReveal>
+              <div id="about">
+                <About />
+              </div>
+            </ScrollReveal>
 
-            <div
-              id="skills"
-              className={`transition-all ease-out duration-[1050ms] delay-200 ${
-                showRight
-                  ? "opacity-100 translate-y-0"
-                  : "opacity-0 translate-y-16"
-              }`}
-            >
-              <Skills />
-            </div>
+            <ScrollReveal delay={0.1}>
+              <div id="skills">
+                <Skills />
+              </div>
+            </ScrollReveal>
 
-            <div
-              id="experience"
-              className={`transition-all ease-out duration-[1100ms] delay-[300ms] ${
-                showRight
-                  ? "opacity-100 translate-y-0"
-                  : "opacity-0 translate-y-16"
-              }`}
-            >
-              <Experience />
-            </div>
+            <ScrollReveal delay={0.1}>
+              <div id="experience">
+                <Experience />
+              </div>
+            </ScrollReveal>
 
-            <div
-              id="projects"
-              className={`transition-all ease-out duration-[1150ms] delay-[400ms] ${
-                showRight
-                  ? "opacity-100 translate-y-0"
-                  : "opacity-0 translate-y-16"
-              }`}
-            >
-              <Projects />
-            </div>
+            <ScrollReveal delay={0.1}>
+              <div id="projects">
+                <Projects />
+              </div>
+            </ScrollReveal>
           </div>
         </div>
       </div>

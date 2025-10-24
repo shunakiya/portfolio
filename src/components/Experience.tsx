@@ -13,7 +13,10 @@ export default function Experience() {
                   <img
                     src={item.logo}
                     className="w-16 h-16 p-2 border-2 rounded-full bg-white mr-1"
+                    width="64"
+                    height="64"
                     alt={`${item.company} logo`}
+                    loading="lazy"
                   />
                   <div className="flex flex-col">
                     <h1 className="text-xl font-medium">{item.position}</h1>

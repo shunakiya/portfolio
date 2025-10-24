@@ -14,7 +14,10 @@ export default function Projects() {
                 <img
                   src={item.logo}
                   className="w-16 h-16 rounded-full mr-1"
+                  width="64"
+                  height="64"
                   alt={`${item.title} logo`}
+                  loading="lazy"
                 />
                 <div className="flex flex-col">
                   <a

@@ -29,7 +29,14 @@ export default function PersonalInfo({ activeSection }: PersonalInfoProps) {
     <div className="py-0 sm:py-6 md:py-8 lg:py-20 flex flex-col sticky gap-6 top-0 h-fit">
       <div className="flex flex-col">
         <div>
-          <img src={pfp} className="w-36 h-36 rounded-full mb-2" />
+          <img
+            src={pfp}
+            className="w-36 h-36 rounded-full mb-2"
+            width="144"
+            height="144"
+            alt="Shunsuke Akiya profile picture"
+            loading="eager"
+          />
           <h1 className="text-3xl font-medium whitespace-nowrap">
             Shunsuke Akiya
           </h1>
