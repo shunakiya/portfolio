@@ -1,4 +1,3 @@
-
 export interface SkillsList {
   iconType: "component" | "image";
   iconName?: string;
@@ -17,7 +16,7 @@ export const skillsListItems: SkillsList[] = [
     title: "Next.js",
     description: "React Framework",
     bgColor: "bg-white/10",
-    iconColor: "fill-white/60",
+    iconColor: "fill-white",
     iconSize: 28,
   },
   {
@@ -42,7 +41,7 @@ export const skillsListItems: SkillsList[] = [
     iconType: "component",
     iconName: "SiJavascript",
     title: "JavaScript",
-    description: "Programming Language",
+    description: "Language",
     bgColor: "bg-[#F7E01830]",
     iconColor: "fill-[#F7E018]",
     iconSize: 26,
@@ -76,7 +75,7 @@ export const skillsListItems: SkillsList[] = [
     iconType: "image",
     imageSrc: "/assets/logos/python.svg",
     title: "Python",
-    description: "Programming Language",
+    description: "Language",
     bgColor: "bg-[#FFD24130]",
     iconSize: 32,
   },

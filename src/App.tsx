@@ -72,7 +72,7 @@ export default function App() {
       >
         <img src={cursor} className="w-full h-full" alt="Custom cursor" />
       </div>
-      <div className="flex flex-col lg:flex-row gap-8 lg:gap-44 mx-auto min-h-screen max-w-screen-xl px-5 py-8 md:px-12 md:py-20 lg:px-24 lg:py-0">
+      <div className="flex flex-col lg:flex-row gap-8 lg:gap-40 mx-auto min-h-screen max-w-screen-xl px-5 py-8 md:px-12 md:py-20 lg:px-24 lg:py-0">
         <div className="w-full lg:w-1/4 lg:sticky lg:top-0 lg:h-screen sm:h-fit">
           <div className="lg:sticky lg:top-24">
             <div

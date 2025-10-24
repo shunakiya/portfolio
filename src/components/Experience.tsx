@@ -2,7 +2,7 @@ import { ExperienceList, experienceListItems } from "../data/ExperienceList";
 
 export default function Experience() {
   return (
-    <div className="mb-4">
+    <div className="mb-6">
       <h1 className="text-2xl font-medium mb-1.5">Professional Experience</h1>
       <div className="space-y-6">
         {experienceListItems.map((item: ExperienceList, index: number) => (
@@ -27,7 +27,8 @@ export default function Experience() {
                     .filter((desc) => desc && desc.trim() !== "")
                     .map((desc, idx) => (
                       <li key={idx} className="flex gap-2">
-                        <p className="ml-1">{desc}</p>
+                        <p>•</p>
+                        <p>{desc}</p>
                       </li>
                     ))}
                 </div>

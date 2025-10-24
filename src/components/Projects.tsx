@@ -3,7 +3,7 @@ import { ProjectsList, projectsListItems } from "../data/ProjectsList";
 
 export default function Projects() {
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden mb-6">
       <h1 className="text-2xl font-medium mb-1.5">Relevant Projects</h1>
 
       <div className="space-y-6">
@@ -13,7 +13,8 @@ export default function Projects() {
               <div className="flex flex-row items-center gap-2 mb-2">
                 <img
                   src={item.logo}
-                  className="w-[68px] h-[68px] rounded-full  mr-1"
+                  className="w-16 h-16 rounded-full mr-1"
+                  alt={`${item.title} logo`}
                 />
                 <div className="flex flex-col">
                   <a
@@ -21,11 +22,11 @@ export default function Projects() {
                     href={item.repoPage}
                     target="_blank"
                   >
-                    <h1 className="text-xl font-medium group-hover:transition group-hover:ease-in-out duration-150 hover:text-slate-400">
+                    <h1 className="text-xl font-medium transition duration-150 ease-in-out group-hover:text-slate-300">
                       {item.title}
                     </h1>
                     <MdOpenInNew
-                      className="group-hover:transition group-hover:ease-in-out duration-150 group-hover:text-slate-400"
+                      className="transition duration-150 ease-in-out group-hover:text-slate-300"
                       size={19}
                     />
                   </a>
@@ -38,7 +39,8 @@ export default function Projects() {
 
               <div className="list-inside space-y-1 text-slate-400">
                 <li className="flex gap-2">
-                  <p className="ml-1">{item.desc}</p>
+                  <p>•</p>
+                  <p>{item.desc}</p>
                 </li>
               </div>
             </div>

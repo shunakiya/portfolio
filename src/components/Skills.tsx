@@ -15,10 +15,10 @@ const iconComponents = {
 
 export default function Skills() {
   return (
-    <div className="flex flex-col mb-1">
+    <div className="flex flex-col mb-6">
       <h1 className="text-2xl font-medium mb-1.5">Skills</h1>
 
-      <div className="grid grid-cols-2 grid-rows-3 lg:grid-cols-3 lg:grid-rows-2 md:grid-cols-3 md:grid-rows-2 sm:grid-cols-2 sm:grid-rows-3 gap-4">
+      <div className="grid grid-cols-2 lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 gap-3">
         {skillsListItems.map((item: SkillsList, index: number) => {
           const IconComponent = item.iconName
             ? iconComponents[item.iconName as keyof typeof iconComponents]
@@ -27,7 +27,7 @@ export default function Skills() {
           return (
             <div
               key={index}
-              className="flex flex-row items-center bg-slate-800 p-2 rounded-lg px-3 w-[168px] lg:w-52 md:w-52 sm:w-52 py-2.5 shadow-sm"
+              className="flex flex-row items-center bg-slate-800 p-2 rounded-lg px-3 py-2.5 border border-slate-700 min-w-0"
             >
               <div
                 className={`${item.bgColor} w-11 h-11 justify-center flex items-center rounded-lg`}
@@ -53,9 +53,7 @@ export default function Skills() {
               </div>
               <div className="flex flex-col mx-2 ml-2.5">
                 <p className="text-base mb-0.5 text-slate-200">{item.title}</p>
-                <p className="text-[11px] lg:text-[10px] md:text-[10px] sm:text-[11px] text-slate-400">
-                  {item.description}
-                </p>
+                <p className="text-xs text-slate-400">{item.description}</p>
               </div>
             </div>
           );
