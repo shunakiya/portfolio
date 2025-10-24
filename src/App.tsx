@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import PersonalInfo from "./components/PersonalInfo";
 import About from "./components/About";
 import Skills from "./components/Skills";
@@ -59,6 +60,7 @@ export default function App() {
   return (
     <div className="min-h-screen relative bg-gradient-to-r from-[#1c2942] via-[#162033] to-[#111927]">
       <Analytics />
+      <SpeedInsights />
 
       <div
         className="fixed pointer-events-none sm:flex md:flex hidden select-none"
