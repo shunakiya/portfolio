@@ -1,4 +1,3 @@
-
 export interface ExperienceList {
   logo: string;
   position: string;
@@ -10,7 +9,7 @@ export interface ExperienceList {
 
 export const experienceListItems: ExperienceList[] = [
   {
-    logo: "/assets/logos/mermory.png",
+    logo: "/assets/logos/mermory.webp",
     position: "Front-End Developer Intern",
     company: "mermory",
     location: "Remote · Internship",

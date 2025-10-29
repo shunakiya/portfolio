@@ -1,7 +1,7 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { IoIosMail, IoIosArrowUp } from "react-icons/io";
 import { IoDocumentText } from "react-icons/io5";
-import pfp from "/assets/pfp.png";
+import pfp from "/assets/pfp.webp";
 
 interface PersonalInfoProps {
   activeSection: string;
